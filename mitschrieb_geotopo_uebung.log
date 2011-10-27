@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.9)  26 OCT 2011 15:47
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.9)  27 OCT 2011 13:57
 entering extended mode
  %&-line parsing enabled.
 **mitschrieb_geotopo_uebung.tex
@@ -870,7 +870,7 @@ $ \T1/cmr/m/it/10.95 heiÿt $[]$,
 Here is how much of TeX's memory you used:
  8822 strings out of 256216
  130483 string characters out of 1917072
- 210648 words of memory out of 1500000
+ 210651 words of memory out of 1500000
  11810 multiletter control sequences out of 10000+200000
  22549 words of font info for 62 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
@@ -890,12 +890,11 @@ luesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/sh
 are/texmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesky
 /cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/te
 xmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/c
-msy8.pfb></usr/share/texmf/fonts/type1/bluesky/ams/eurm10.pfb></usr/share/texmf
-/fonts/type1/bluesky/ams/msbm10.pfb></usr/share/texmf/fonts/type1/bluesky/ams/m
-sbm7.pfb>
-Output written on mitschrieb_geotopo_uebung.pdf (5 pages, 177775 bytes).
+msy8.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm10.pfb></usr/share/texmf
+/fonts/type1/bluesky/ams/msbm7.pfb>
+Output written on mitschrieb_geotopo_uebung.pdf (5 pages, 175716 bytes).
 PDF statistics:
- 393 PDF objects out of 1000 (max. 8388607)
+ 389 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 131072)
  70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
