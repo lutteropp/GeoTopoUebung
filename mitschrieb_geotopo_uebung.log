@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.9)  29 OCT 2011 17:51
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.9)  3 NOV 2011 09:17
 entering extended mode
  %&-line parsing enabled.
 **mitschrieb_geotopo_uebung.tex
@@ -840,7 +840,7 @@ LaTeX Info: Redefining \pageref on input line 94.
 \openout4 = `mitschrieb_geotopo_uebung.out'.
 
 
-<torus2.pdf, id=31, 241.73793pt x 175.65433pt>
+<torus2.pdf, id=47, 241.73793pt x 175.65433pt>
 File: torus2.pdf Graphic file (type pdf)
  <use torus2.pdf> [1
 
@@ -940,32 +940,39 @@ Overfull \hbox (38.71713pt too wide) in paragraph at lines 202--203
 $ \T1/lmr/m/it/10.95 heiÿt $[]$,
  []
 
-[3] [4] (./mitschrieb_geotopo_uebung.aux) ) 
+[3] [4]
+Kapitel 2.
+[5
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 292.
+ [6] (./mitschrieb_geotopo_uebung.aux) ) 
 Here is how much of TeX's memory you used:
- 8918 strings out of 256216
- 132824 string characters out of 1917072
+ 8943 strings out of 256216
+ 133119 string characters out of 1917072
  210805 words of memory out of 1500000
- 11887 multiletter control sequences out of 10000+200000
- 71734 words of font info for 66 fonts, out of 1200000 for 2000
+ 11901 multiletter control sequences out of 10000+200000
+ 82157 words of font info for 74 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  45i,15n,43p,384b,539s stack positions out of 5000i,500n,6000p,200000b,15000s
-{/usr/share/texmf/fonts/enc/dvips/lm
-/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/t
-exmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-r
-m.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/ty
-pe1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/blu
-esky/ams/msbm10.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm7.pfb>
-Output written on mitschrieb_geotopo_uebung.pdf (5 pages, 235780 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texm
+f/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.e
+nc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1
+/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/bluesk
+y/ams/msbm10.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm7.pfb>
+Output written on mitschrieb_geotopo_uebung.pdf (7 pages, 256553 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 131072)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 131072)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
