@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.20a-2.2 (MiKTeX 2.4) (preloaded format=latex 2011.10.30)  4 NOV 2011 22:01
+This is pdfeTeX, Version 3.141592-1.20a-2.2 (MiKTeX 2.4) (preloaded format=latex 2011.10.30)  4 NOV 2011 22:11
 entering extended mode
 **mitschrieb_geotopo_uebung.tex
 (mitschrieb_geotopo_uebung.tex
@@ -886,7 +886,7 @@ $ \T1/lmr/m/it/10.95 heiÿt $[]$,
 [3] [4]
 Kapitel 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--286
+Underfull \hbox (badness 10000) in paragraph at lines 271--288
 
  []
 
@@ -905,7 +905,7 @@ pg> <images/0_1_nach_S1_f-1_nicht_stetig.jpg>]
 .1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \penalty 
-l.301 \subfloat
+l.303 \subfloat
                [Iteration 1]{\includegraphics[width=0.4\textwidth]{images/Pe...
 <images/PeanoKurve1.jpg, id=165, 149.8097pt x 149.8097pt>
 File: images/PeanoKurve1.jpg Graphic file (type jpg)
@@ -915,7 +915,7 @@ File: images/PeanoKurve1.jpg Graphic file (type jpg)
 .1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \penalty 
-l.302 \subfloat
+l.304 \subfloat
                [Iteration 2]{\includegraphics[width=0.4\textwidth]{images/Pe...
 <images/PeanoKurve2.jpg, id=166, 149.8097pt x 149.8097pt>
 File: images/PeanoKurve2.jpg Graphic file (type jpg)
@@ -929,7 +929,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  13744 strings out of 95516
  226305 string characters out of 1189554
- 276086 words of memory out of 1272198
+ 276598 words of memory out of 1272198
  16201 multiletter control sequences out of 35000
  70104 words of font info for 86 fonts, out of 500000 for 1000
  14 hyphenation exceptions out of 607
@@ -948,4 +948,4 @@ pe1\public\lm\lmri10.pfb><C:\texmf\fonts\type1\bluesky\cm\cmmi8.pfb><C:\texmf\f
 onts\type1\bluesky\symbols\msbm10.pfb><C:\texmf\fonts\type1\public\lm\lmbx10.pf
 b><C:\texmf\fonts\type1\public\lm\lmr10.pfb><C:\texmf\fonts\type1\public\lm\lmr
 12.pfb><C:\texmf\fonts\type1\public\lm\lmbx12.pfb>
-Output written on mitschrieb_geotopo_uebung.pdf (8 pages, 312689 bytes).
+Output written on mitschrieb_geotopo_uebung.pdf (8 pages, 312687 bytes).
