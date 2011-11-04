@@ -15,6 +15,7 @@
 \usepackage[pdftex,pdfpagelabels,colorlinks,backref,pagebackref]{hyperref}
 \usepackage{tikz} % SELBST HINZUGEFÜGT
 \usepackage{lmodern}
+\usepackage{subfig}
 % == Set the heading style ===================================================
 \setlength{\headheight}{14pt}
 \pagestyle{fancyplain}
@@ -223,4 +224,101 @@ Dies ist ein Mitschrieb der Übung “Einführung in die Geometrie und Topologie
 		Dann ist $H$ Homotopie von $f \circ g$ nach $id_{\R^n \backslash \{0\}}$ (in Zeichen: $f \circ g \simeq id_{\R^n \backslash \{0\}}$).
 	\end{proof}
 \end{section}
+
+\chapter{31.10.2011}
+\section{Universelle Eigenschaft der Teilraumtopologie}
+Es sei $(X, \OO_X)$ ein topologischer Raum und $A \subseteq X$ versehen mit der Teilraumtopologie $\OO_A = \{ O \cap A \mid O \in \OO_X \}$.
+Weiter sei $\iota \colon A \hookrightarrow X$ die Inklusionsabbildung und $(Y, \OO_Y)$ ein weiterer topologischer Raum.
+
+\begin{theorem}{Behauptung}
+Eine Abbildung $\phi \colon Y \rightarrow A$ ist genau dann stetig, wenn die Komposition $\iota \circ \phi \colon Y \rightarrow X$ stetig ist.
+\end{theorem}
+
+\begin{proof}
+`$\Rightarrow$': Es sei $\phi \colon Y \rightarrow A$ stetig. [\underline{z.z.}: $\iota \circ \phi$ ist stetig, d.h. $\forall O \in \OO_X \colon (\iota \circ \phi)^{-1}(O) \in \OO_Y$]
+\newline
+Sei $O \in \OO_X$. Dann gilt $(\iota \circ \phi)^{-1}(O) = \phi^{-1}\left(\iota^{-1}(O)\right)$ und es ist $\iota^{-1}(O) \in \OO_A$, da $\iota$ stetig ist.
+\newline
+Es gilt somit $\phi^{-1}\left(\iota^{-1}(O)\right) \in \OO_Y$, da $\phi$ stetig ist (nach Voraussetzung).
+\newline
+`$\Leftarrow$': Es sei $\phi \colon Y \rightarrow A$ eine Abbildung, so dass $\iota \circ \phi \colon Y \rightarrow X$ stetig ist. [\underline{z.z.}: $\phi$ ist stetig, d.h. $\forall O \in \OO_A \colon \phi^{-1}(O) \in \OO_Y$.]
+\newline
+Sei also $O \in \OO_A$. Dann existiert $O^\prime \in \OO_X$, so dass $O = O^\prime \cap A$.
+Es gilt: $\iota^{-1}(O^\prime) = O^\prime \cap A = O$.
+\newline
+$\phi^{-1}(O) = \phi^{-1}(O^\prime \cap A) = \phi^{-1}\left(\iota^{-1}(O^\prime)\right) = (\iota \circ \phi)^{-1}(O^\prime) \in \OO_Y$, da $\iota \circ \phi$ stetig (nach Voraussetzung).
+\end{proof}
+
+\begin{remark}{(Bemerkung in der Vorlesung)}
+Die Teilraumtopologie ist die gröbste Topologie, bezüglich der die Inklusionsabbildung $\iota \colon A \hookrightarrow X$ stetig ist.
+\end{remark}
+
+\begin{proof}
+\underline{Stetigkeit der Inklusionsabbildung}: [\underline{z.z.}: $\forall O \in \OO_X \colon \iota^{-1}(O) \in \OO_A$]
+\newline
+Sei $O \in \OO_X$. Dann gilt $\iota^{-1}(O)=O \cap A \in \OO_A$.
+\end{proof}
+
+\begin{proof}
+\underline{Nichtstetigkeit in gröberen Topologien}: [\underline{z.z.}: $\OO_A \not\subseteq \tilde \OO \Rightarrow \exists O^\prime \in \OO_X \colon \iota^{-1}(O^\prime) \notin \tilde \OO$]
+\newline
+Sei $\OO_A \not\subseteq \tilde \OO \Rightarrow \exists O \in \OO_A\colon O \notin \tilde\OO$. Dann  $\exists O^\prime \in \OO_X \colon O = O^\prime \cap A$. Damit ist aber $\iota^{-1}(O^\prime)=O^\prime \cap A = O \notin \tilde\OO \Rightarrow \iota\colon (A,\tilde\OO) \rightarrow (X,\OO_X)$ ist nicht stetig.
+\end{proof}
+
+\section{Homöomorphismen}
+Zeigen Sie, dass für $a,b \in \R$ mit $a < b$ das Intervall $(a,b)$ homöomorph zum Intervall $(0,1)$ ist, sowie dass $(0,1)$ homöomorph ist zu $\R$.
+\newline
+Definiere $f \colon (a,b) \rightarrow (0,1), x \mapsto \frac{a-x}{a-b}$, und $g \colon (0,1) \rightarrow (a,b), x \mapsto (1-x) \cdot a + x \cdot b$.
+\newline
+Es gilt für alle $x \in (a,b)$:
+\newline
+$(g \circ f)(x) = g \left(\frac{a-x}{a-b}\right) = \left(1- \frac{a-x}{a-b}\right)a + \frac{a-x}{a-b}b = \left(\frac{a-b-a+x}{a-b}\right)a+ \frac{a-x}{a-b}b = \frac{x-b}{a-b}a + \frac{a-x}{a-b}b = \frac{ax-ab+ab-bx}{a-b} = x$.
+\newline
+Es gilt für alle $x \in (0,1)$:
+\newline
+$(f \circ g)(x)=f\left((1-x) \cdot a + x \cdot b\right)=\frac{a-((1-x)a+bx)}{a-b}=\frac{a-a+ax-bx}{a-b}=x$. Somit ist $f$ bijektiv. 
+Da $f$ und $g = f^{-1}$ stetig sind, gilt damit: $f$ ist ein Homöomorphismus, d.h. $(a,b) \equiv (0,1)$.
+\newline
+Definiere $h \colon (0,1) \rightarrow \R, x \mapsto \tan{\left((x-\frac{1}{2})\pi \right)}$.
+\newline
+\newline
+$f \colon [0,1) \rightarrow S^1, t \mapsto e^{2\pi i t} \left(=(\cos{2 \pi t}, \sin{2 \pi t})\right)$ ist kein Homöomorphismus (da die Umkehrabbildung nicht stetig ist).
+
+\begin{figure}[h]
+\centering
+\subfloat[$f$ ist stetig $\dots$]{\includegraphics[width=0.75\textwidth]{images/0_1_nach_S1_f_stetig.jpg}}
+\subfloat[$\dots f^{-1}$ aber nicht.]{\includegraphics[width=0.75\textwidth]{images/0_1_nach_S1_f-1_nicht_stetig.jpg}}
+\end{figure}
+
+\section{Die Peano-Kurve}
+(Guiseppe Peano, $\sim 1890$)
+\begin{theorem}
+	Es gibt eine surjektive, stetige Abbildung $I = [0,1] \rightarrow I \times I$.
+\end{theorem}
+
+\begin{figure}[h]
+\centering
+\subfloat[Iteration 1]{\includegraphics[width=0.4\textwidth]{images/PeanoKurve1.jpg}}\qquad
+\subfloat[Iteration 2]{\includegraphics[width=0.4\textwidth]{images/PeanoKurve2.jpg}}
+\caption{Prinzip der Peano-Kurve}
+\end{figure}
+
+\paragraph{Verallgemeinerung}
+\begin{itemize}
+\item Es gibt eine surjektive, stetige Abbildung $I \rightarrow I^n = I \times I \times \ldots \times I (n \in \N)$.
+\item Es gibt eine surjektive, stetige Abbildung $\R \rightarrow \R^n$.
+\end{itemize}
+
+\subsection{Zugang mit Hilfe der Cantor-Menge $\mathcal{C}$}
+Definiere $f \colon \mathcal{C} \rightarrow I, f \left(\sum\limits_{i=1}^{\infty}{\frac{a_i}{3}} \right) = \sum\limits_{i=1}^{\infty}{\frac{\frac{a_i}{2}}{2^i}}$ für $a_i \in \{0,2\}$.
+\newline
+Dann ist $f$ surjektiv und stetig.
+\newline
+Definiere $g \colon \mathcal{C} \rightarrow \mathcal{C} \times \mathcal{C}, g \left(\sum\limits_{i=1}^{\infty}{\frac{a_i}{3}} \right) = \left(\sum\limits_{i=1}^{\infty}{\frac{a_{2i}}{3^i}}, \frac{a_{2i+1}}{3^i} \right)=:(g_1,g_2)$ für $a_i \in \{0,2\}$.
+\newline
+Dann ist $g$ surjektiv und stetig.
+\newline
+Es ist auch $h \colon \mathcal{C} \rightarrow I \times I, x \mapsto \left(f(g_1(x)), f(g_2(x))\right)$ surjektiv und stetig.
+\newline
+Setze die Abbildung $h$ durch lineare Fortsetzungen stetig auf $I$ fort.
 \end{document}
