@@ -323,4 +323,104 @@ Dann ist $g$ surjektiv und stetig.
 Es ist auch $h \colon \mathcal{C} \rightarrow I \times I, x \mapsto \left(f(g_1(x)), f(g_2(x))\right)$ surjektiv und stetig.
 \newline
 Setze die Abbildung $h$ durch lineare Fortsetzungen stetig auf $I$ fort.
+
+\chapter{07.11.2011}
+\section{Nachträge und Wiederholungen zur Vorlesung}
+\subsection{Überdeckung, Teilüberdeckung und Kompaktheit}
+Sei $X$ ein topologischer Raum.
+\begin{definition}
+	\begin{itemize}
+		\item Eine Familie $\{\mathcal{U}_\alpha \mid \alpha \in A \}$ von Teilmengen von $X$ heißt \underline{Überdeckung} von $X$, falls gilt: $X = \bigcup\limits_{\alpha \in A}{\mathcal{U}_\alpha}$.
+		\item Eine Überdeckung heißt \underline{offen} (bzw. \underline{abgeschlossen}), falls alle $\mathcal{U}_\alpha (\alpha \in A)$ offen (bzw. abgeschlossen) sind.
+		\item Es heißt $X$ \underline{kompakt}, falls jede offene Überdeckung $\mathcal{U}=\{U_\alpha, \alpha \in A\}$ eine endliche Teilüberdeckung $\mathcal{U}^\prime$ besitzt, d.h. es existiert $A^\prime \subset A$ endlich, so dass $\mathcal{U}^\prime = \{\mathcal{U}_\alpha \mid \alpha \in A^\prime \}$ eine offene Überdeckung von $X$ ist.
+	\end{itemize}
+\end{definition}
+
+\begin{example}
+	\begin{itemize}
+		\item Endliche Räume und mit der trivialen Topologie versehene Räume sind kompakt.
+		\item Diskrete Räume sind genau dann kompakt, wenn sie aus endlich vielen Elementen bestehen.
+		\item $\R$ (versehen mit der Standardtopologie) ist \underline{nicht} kompakt, $\R_{\mathcal{T}_1}$ schon. ($\mathcal{T}_1 = \{ \R \backslash E \mid E \text{ endliche Teilmenge von } \R \} \cup \{\emptyset\}$)
+	\end{itemize}
+\end{example}
+
+\begin{definition}	Eine \underline{kompakte Menge} ist eine Teilmenge eines vom Kontext her klaren topologischen Raumes, die bezüglich der Teilraumtopologie kompakt ist.
+\end{definition}
+
+\begin{example}
+	$[0,1) (\subseteq \R)$ ist nicht kompakt, \underline{denn:} Die Überdeckung $\{(-1,1-\frac{1}{n}) \mid n \in \N \}$ von $[0,1)$ enthält keine endliche Teilüberdeckung.
+\end{example}
+
+\begin{remark}
+	\begin{itemize}
+		\item \underline{Satz von Heine-Borel:} Teilmengen euklidischer, endlich dimensionaler Räume sind genau dann kompakt, wenn sie abgeschlossen und beschränkt sind.
+		\item Abgeschlossene Teilmengen kompakter Räume sind kompakt.
+		\item Stetige Bilder kompakter Mengen sind kompakt, d.h. ist $X$ eine kompakte Menge, $Y$ topologischer Raum, $f \colon X \rightarrow Y$ stetig, dann ist $f(X)$ kompakt.
+		\item Ist $X$ kompakt, $f \colon X \rightarrow \R$ stetig, so ist $f(X)$ kompakt und $f$ nimmt auf $X$ Maximum und Minimum an.
+		\item \underline{Lebesque-Lemma:} Ist $f \colon X \rightarrow Y$ stetige Abbildung topologischer Räume und $X$ metrisch und kompakt, so gilt:
+		\newline
+			Ist $\mathcal{U}$ eine offene Überdeckung von $Y$, so existiert $\delta \in \R_{>0}$, sodass für alle $A \subseteq X$ mit diam $A < \delta$ ein $U^\prime \in \mathcal{U}$ mit $f(A) \subseteq U^\prime$ existiert.
+	\end{itemize}
+\end{remark}
+
+\subsection{Wegzusammenhang}
+\begin{definition}
+	\begin{itemize}
+		\item Ein \underline{Weg} in $X$ ist eine stetige Abbildung $\gamma \colon I(=[0,1]) \rightarrow X$ mit Anfangspunkt $\gamma(0)$ und Endpunkt $\gamma(1)$.	
+		\item Man nennt $X$ \underline{wegzusammenhängend}, falls für alle $x,y \in X$ ein Weg $\gamma \colon [0,1] \rightarrow X$ in $X$ existiert mit $\gamma(0)=x, \gamma(1)=y$.
+		\item Eine \underline{Wegzusammenhangskomponente} von $X$ ist eine wegzusammenhängende Teilmenge von $X$, die in keiner echt größeren solchen Teilmenge enthalten ist.
+	\end{itemize}
+\end{definition}
+
+\begin{remark}
+	\begin{itemize}
+		\item Jeder Punkt von $X$ liegt in genau einer Wegzusammenhangskomponente von $X$, und zwei solche Komponenten sind entweder gleich oder disjunkt.
+		\item Stetige Bilder wegzusammenhängender Mengen sind wegzusammenhängend.
+	\end{itemize}
+\end{remark}
+
+\begin{corollary}
+	Wegzusammenhang bleibt unter Homöomorphismen erhalten, ebenso die Anzahl der Wegzusammenhangskomponenten.
+\end{corollary}
+
+Wegzusammende topologische Räume sind zusammenhängend (Übungsaufgabe), die Umkehrung gilt im Allgemeinen nicht.
+
+\paragraph{Beispiel eines Raumes, der zusammenhängend, aber nicht wegzusammenhängend ist}
+(TODO: Bild)
+\newline
+Definiere $A = \{(x,y) \in \R^2 \mid x > 0, y = \sin{\left(\frac{1}{x}\right)}\}, X := A \cup \{(0,0)\}$.
+\newline
+Es gilt:
+\begin{itemize}
+	\item Es ist $A$ wegzusammenhängend, denn:
+	 \newline	
+	 $A \cong (0, +\infty) \cong \R$, und $\R$ ist wegzusammenhängend.
+	\item Es ist $X$ zusammenhängend, denn:
+		\newline
+		Es gilt: $\bar{A} = A \cup \{(0,y) \mid y \in [-1,1]\}$ ist als Abschluss einer zusammenhängenden Menge wieder zusammenhängend (siehe Bemerkung in der Vorlesung).
+		\newline
+		Außerdem gilt: $A \subseteq X \subseteq \bar{A}$, und $X$ ist als Teilmenge des Abschlusses eines zusammenhängenden Raumes wieder zusammenhängend. (\underline{Allgemein:} Es sei $A$ zusammenhängend, $A \subseteq B \subseteq \bar{A}$. Dann ist auch $B$ zusammenhängend.)
+	\item Es ist $X$ \underline{nicht wegzusammenhängend}, denn:
+		\newline
+		Es lässt sich $(0,0)$ nicht über einen Weg in $X$ mit einem beliebigen anderen Punkt aus $X$ verbinden\footnote{Formale Begründung: Jeder in $(0,0)$ startende Weg ist konstant.}.
+\end{itemize}
+
+\begin{remark}
+	Der Abschluss wegzusammenhängender Räume ist im Allgemeinen nicht wegzusammenhängend!
+\end{remark}
+
+\begin{example}[Beispiel von oben]
+	Der Abschluss von $A$ \underline{in $X$} - nicht in $\R^2$ - ist $X$, und $X$ ist (s.o.) nicht wegzusammenhängend.
+\end{example}
+
+\begin{remark}
+	Besitzt jeder Punkt eines topologischen Raumes $X$ eine wegzusammenhängende Umgebung, so sind alle Wegzusammenhangskomponenten offen in $X$, und $X$ ist genau dann wegzusammenhängend, wenn $X$ zusammenhängend ist.
+\end{remark}
+
+\begin{example}
+	Offene Teilmengen von $\R^n$ sind genau dann wegzusammenhängend, wenn sie zusammenhängend sind, \underline{denn:}
+	\newline
+	Jeder Punkt $x \in \R^n$ besitzt dann als offene Umgebung einen offenen Ball, und offene Bälle sind wegzusammenhängend.
+\end{example}
+
 \end{document}
