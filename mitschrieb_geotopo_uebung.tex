@@ -426,7 +426,7 @@ Es gilt:
 
 \chapter{14.11.2011}
 \section{Beispiele für Beweise im Kontext von Hausdorffräumen}
-\begin{theorem}{Behauptung}
+\begin{theorem}{Behauptung:}
 Ist $X$ ein Hausdorffraum, so besitzt jede Folge $(x_n)_{n \in \N} \in X^\N$ höchstens einen Grenzwert.
 \end{theorem}
 \begin{proof}
@@ -434,7 +434,7 @@ Ist $X$ ein Hausdorffraum, so besitzt jede Folge $(x_n)_{n \in \N} \in X^\N$ hö
 	\newline
 	\underline{Annahme:} Es existiert eine Folge $(x_n)_{n \in \N} \in X^\N$ mit $x = \lim\limits_{n \rightarrow \infty}(x_n) = x^\prime$ und $x \neq x^\prime$.
 	\newline
-	Da $X$ Hausdorffsch ist, existieren offene Teilmengen $U,V \subseteq X$, mit $U \cap V = \emptyset$ und $x \in U, x^\prime \in V$. Dann existieren $n_0, n_0^\prime \in \N$ mit $x_n \in U, x_m \in V \text{ für alle } n \in \N_{\geq n_0}, m \in \N_{\geq n_0^\prime}$. Dann gilt also für alle $k \geq \max\{n_0,n_0^\prime\} \colon x_k \in U \cap V$. $\lightning$
+	Da $X$ Hausdorffsch ist, existieren offene Teilmengen $U,V \subseteq X$, mit $U \cap V = \emptyset$ und $x \in U, x^\prime \in V$. Dann existieren $n_0, n_0^\prime \in \N$ mit $x_n \in U, x_m \in V \text{ für alle } n \in \N_{\geq n_0}, m \in \N_{\geq n_0^\prime}$. Dann gilt also für alle $k \geq \max\{n_0,n_0^\prime\} \colon x_k \in U \cap V=\emptyset$. $\lightning$
 \end{proof}
 
 \begin{theorem}
@@ -442,8 +442,8 @@ Jeder metrische Raum ist Hausdorffsch.
 \end{theorem}
 
 \begin{proof}
-[\underline{z.z.:} $\forall x,y \in X \exists U_x, U_y \subseteq X \colon U_x \cap U_y = \emptyset$.]
-Seien $x,y \in X$. Wähle $U_x := B_\frac{d(x,y)}{3}(x), U_y := B_\frac{d(x,y)}{3}(y)$.
+[\underline{z.z.:} $\forall x\neq y \in X \exists U_x, U_y \subseteq X \colon U_x \cap U_y = \emptyset$.]
+Seien $x\neq y \in X$. Wähle $U_x := B_\frac{d(x,y)}{3}(x), U_y := B_\frac{d(x,y)}{3}(y)$.
 \newline
 Dann gilt: $U_x \cap U_y = \emptyset$.
 \end{proof}
@@ -461,8 +461,8 @@ Dann gilt: $U_x \cap U_y = \emptyset$.
 			\begin{itemize}
 				\item $(a,b)$ ist als metrischer Raum Hausdorffsch.
 				\item Es ist $\mathcal{B} = \{B_{\frac{1}{n}}(x) \mid x \in \Q, n \in \N\}$ eine abzählbare Basis der Topologie.
-				\item $(a,b)$ ist lokal homöomorph zu $\R$, \underline{denn:} Es gilt: $id \colon (a,b) \mapsto (a,b) \subseteq \R$ ist ein Homöomorphismus einer offenen Menge in eine offene Teilmenge von $\R$. Somit ist $\left((a,b),id\right)$ eine (\underline{globale})\footnote{Global, da für die ganze Mannigfaltigkeit gleich.} Karte.
-				\item Für den Kartenwechsel gilt: $id \circ id^{-1} \colon (a,b) \rightarrow (a,b), x \mapsto x$, ist eine glatte Abbildung.
+				\item $(a,b)$ ist lokal homöomorph zu $\R$, \underline{denn:} Es gilt: $id \colon (a,b) \mapsto (a,b) \subseteq \R$ ist ein Homöomorphismus einer offenen Menge in eine offene Teilmenge von $\R$. Somit ist $\left((a,b),id_{(a,b)}\right)$ eine (\underline{globale})\footnote{Global, da für die ganze Mannigfaltigkeit gleich.} Karte.
+				\item Für den Kartenwechsel gilt: $id_{(a,b)} \circ id_{(a,b)}^{-1} \colon (a,b) \rightarrow (a,b), x \mapsto x$, ist eine glatte Abbildung.
 			\end{itemize}
 		
 		\item $S^1 = \{ x \in \R^2 \mid ||x|| = 1\}$ ist eine 1-dimensionale glatte Mannigfaltigkeit (TODO Bild 2), \underline{denn:}
@@ -470,7 +470,7 @@ Dann gilt: $U_x \cap U_y = \emptyset$.
 				\item Es ist $S^1$ als Teilmenge des metrischen Raumes $\R^2$ Hausdorffsch.
 					\newline
 					Ebenso besitzt $S^1$ eine abzählbare Basis der Topologie.
-				\item Definiere $$U_1 := \{(x,y) \in S^1 \mid y \neq 1\} = S^1 \backslash \{N\} \quad \left(N = (0,1)\right)$$ und $$U_2 := \{(x,y) \in S^1 \mid y \neq -1\} = S^1 \backslash \{S\} \quad \left(S = (0,-1)\right).$$
+				\item Definiere $$U_1 := \{(x,y) \in S^1 \mid y \neq 1\} = S^1 \backslash \{N\} \quad \left(N := (0,1)\right)$$ und $$U_2 := \{(x,y) \in S^1 \mid y \neq -1\} = S^1 \backslash \{S\} \quad \left(S := (0,-1)\right).$$
 				Dann gilt:
 				\item $U_1 \cup U_2 = S^1$,
 				\item Es sind $U_1$ und $U_2$ offene Teilmengen von $S^1$, denn sie sind jeweils Komplement einer einpunktigen und damit abgeschlossenen Menge.
@@ -495,7 +495,7 @@ Dann gilt: $U_x \cap U_y = \emptyset$.
 	\item Es ist $\R^n$ eine $n$-dimensionale glatte Mannigfaltigkeit, \underline{denn:}
 		\begin{itemize}
 			\item $\R^n$ ist Hausdorffsch und besitzt eine abzählbare Basis der Topologie.
-			\item $(\R^n, id)$ ist eine globale Karte.
+			\item $(\R^n, id_{\R^n})$ ist eine globale Karte.
 		\end{itemize}
 \end{enumerate}
 
@@ -507,7 +507,7 @@ Dann gilt: $U_x \cap U_y = \emptyset$.
 	Es sei $\mathcal{A} = \{(\varphi,U)\}$ dieser Atlas. Dann gilt:
 	\newline
 	Es gibt nur genau einen Kartenwechsel: 
-	$$\varphi \circ \varphi^{-1} = id \colon \varphi(U) \rightarrow \varphi(U)$$ und dieser ist natürlich glatt.
+	$$\varphi \circ \varphi^{-1} = id_{\varphi(U)} \colon \varphi(U) \rightarrow \varphi(U)$$ und dieser ist natürlich glatt.
 \end{proof}
 
 \begin{theorem}
@@ -515,7 +515,7 @@ Dann gilt: $U_x \cap U_y = \emptyset$.
 \end{theorem}
 
 \begin{proof}
-	Es sei $M$ eine $C^k$-Mannigfaltigkeit, $N \subseteq_{offen} M$.
+	Es sei $M$ eine $C^k$-Mannigfaltigkeit der Dimension $n$, $N \subseteq_{offen} M$.
 	\begin{itemize}
 		\item Als Teilmenge von $M$ ist $N$ Hausdorffsch und auch die abzählbare Basis der Topologie überträgt sich.
 		\item Es sei $\mathcal{A} = \{(\varphi_\alpha, U_\alpha) \mid \alpha \in \Lambda \}$ ($\Lambda$ Indexmenge) ein $C^k$-Atlas von $M$.
