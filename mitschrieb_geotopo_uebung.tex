@@ -534,4 +534,106 @@ Dann gilt: $U_x \cap U_y = \emptyset$.
 	Es gilt: $GL(n,\R) = \det^{-1}(\R \backslash \{0\}) \subseteq_{offen} \R^{n^2}$
 \end{example}
 
+\chapter{21.11.11}
+
+\section{Untermannigfaltigkeiten}
+\begin{theorem}{$C^\infty$-Untermannigfaltigkeiten von $\R^{n+l}$ sind $C^\infty$-Mannigfaltigkeiten}
+	Es sei $M \subseteq \R^{n+l}$ eine $n$-dimensionale $C^\infty$-Untermannigfaltigkeit von $\R^{n+l}$, versehen mit der Teilraumtopologie, und $\{\psi_\alpha \colon W_\alpha \rightarrow U_\alpha \cap M\ \mid \alpha \in \Lambda\}$ eine Menge lokaler Parametrisierungen (siehe Untermannigfaltigkeitskriterium, (c)) mit $M \subseteq \bigcup\limits_{\alpha \in \Lambda}{U_\alpha}$.
+	\newline
+	Dann ist $\mathcal{A}=\{(\psi_\alpha^{-1}, U_\alpha \cap M) \mid \alpha \in \Lambda\}$ ein $C^\infty$-Atlas für $M$ und somit eine $C^\infty$-Mannigfaltigkeit.
+\end{theorem}
+
+\begin{proof}
+	\begin{itemize}
+		\item Es gilt: $M$ ist Hausdorffsch und besitzt eine abzählbare Basis der Topologie als Teilmenge von $\R^{n+l}$.
+		\item Es ist $\mathcal{A}$ ein Atlas (nach Definition der lokalen Parametrisierungen).
+		\item $[$\underline{z.z.:} Die Kartenwechsel sind glatt, d.h.: 
+			$$\forall \alpha, \beta \in \Lambda \colon (U_\alpha \cap M) \cap (U_\beta \cap M) \neq \emptyset$$
+			$$\Rightarrow \psi_\beta^{-1} \circ \psi_\alpha \colon \psi_\alpha^{-1}(U_\alpha \cap U_\beta \cap M) \rightarrow \psi_\beta(U_\alpha \cap U_\beta \cap M)$$
+			 ist glatt.$]$
+			Seien $\alpha, \beta \in \Lambda$ mit $(U_\alpha \cap M) \cap (U_\beta \cap M) \neq \emptyset$.
+			\newline
+			(\underline{Vorsicht:} Es ist $\psi_\beta^{-1}$ nicht auf einer offenen Teilmenge von $\R^{n+l}$ definiert, daher ist die Kettenregel nicht direkt anwendbar!)
+			\newline
+			\underline{Zeige:} Es ist $\psi_\beta^{-1}$ auf einer (offenen) Umgebung eines jeden Punktes $y \in U_\alpha \cap U_\beta \cap M$ eine glatte Abbildung.
+			\newline
+			Sei $x \in \psi_\alpha^{-1}(U_\alpha \cap U_\beta \cap M)$. Nach dem Untermannigfaltigkeits-Kriterium (b) existiert eine Umgebung $U \subseteq U_\alpha \cap U_\beta$ von $\psi_\alpha(x) \in M$ in $\R^{n+l}$ und ein $C^\infty$-Diffeomorphismus $\varphi \colon U \rightarrow \varphi(U) \subseteq \R^{n+l}$ mit $\varphi(U \cap M) = \varphi(U) \cap (\R^{n} \times \{0\})$
+			\newline
+			Definiere $\pi \colon \R^{n+l} \cong \R^n \times \R^l \rightarrow \R^n$, die Projektion auf die ersten $n$ Komponenten und $\iota \colon \R^n \rightarrow \R^{n+l}, x \mapsto (x,0)$, die Inklusion. Dann gilt auf $\varphi(U \cap M) \subseteq \R^{n} \times \{0\}$: $\iota \circ \pi = id$. Daher gilt auf $\psi_\alpha^{-1}(U \cap M)$: 
+			$$\psi_\beta^{-1} \circ \psi_\alpha = \psi_\beta^{-1} \circ \varphi^{-1} \circ \varphi \circ \psi_\alpha = (\psi_\beta^{-1} \circ \varphi^{-1} \circ \iota)\circ(\pi \circ \varphi \circ \psi_\alpha).$$
+			Es sind $(\psi_\beta^{-1} \circ \varphi^{-1} \circ \iota) = (\pi \circ \varphi \circ \psi_\beta)^{-1}$ und $\pi \circ \varphi \circ \psi_\alpha$ glatte Abbildungen zwischen offenen Teilmengen des $\R^n$ und somit auch die Komposition $\psi_\beta^{-1} \circ \psi_\alpha$.
+	\end{itemize}
+\end{proof}
+
+\section{Wichtige Spezialfälle (und Beispiele) von Untermannigfaltigkeiten}
+\paragraph{(a) Niveaumengen}
+Es seien $V \subseteq \R^{n+l}$ offen, $f \in C^\infty(V,\R^l), c \in \R^l$. Gilt Rang $Df(x)=l$ in jedem Punkt $x$ der Niveaumenge
+$$f^{-1}(c) = \{x \in V \mid f(x) = c\},$$
+so ist $f^{-1}(c)$ eine $n$-dimensionale glatte Untermannigfaltigkeit von $\R^{n+l}$.
+
+\begin{proof}
+	Wende Untermannigfaltigkeits-Kriterium (a) auf die Abbildung $$g = f - c \colon x \mapsto f(x)-c$$ an.
+	\newline
+	$[$\underline{z.z.:} Rang $Df(x)=l$ auf einer Umgebung $U$ von $f^{-1}(c)$, nicht nur auf der Niveaumenge selbst!$]$
+	\newline
+	Sei $x_0 \in f^{-1}(c)$. Da Rang $Df(x_0) = l$, existiert eine $(l \times l)$-Unterdeterminante $A(x)$ von $\det{Df(x)}$, so dass $A(x_0)\neq \emptyset$. Da $f$ stetig ist, ist die Abbildung $x \mapsto A(x)$ stetig, und somit folgt: $A(x)\neq 0$ auf einer Umgebung $U(x_0)$ von $x_0$. Dann ist Rang $Df(x)=l$ für alle $x \in U(x_0)$.
+	\newline
+	Setze $U:= \bigcup\limits_{x_0 \in f^{-1}(c)}{U(x_0)}$, dann folgt die Behauptung.
+\end{proof}
+
+\begin{example}
+	(TODO:Bild)
+	\newline
+	Der \underline{Zylinder} $M=\{(x,y,z) \in \R^3 \mid x^2+y^2 = 1\}$ ist als Niveaumenge der Abbildung $f \colon \R^3 \rightarrow \R, (x,y,z) \mapsto \underbrace{x^2+y^2}-1$, eine $C^\infty$-Untermannigfaltigkeit von $\R^3$.
+\end{example}
+
+\paragraph{(b)}
+\begin{example}
+	Der Graph der Abbildung $\varphi \colon \R \rightarrow \R^2, t \mapsto (\cos{(t)},\sin{(t)})$, d.h. die Menge $\{(\cos{(t)},\sin{(t)},t) \mid t \in \R\}$, die \underline{Helix}
+	(TODO: Bild), ist eine 1-dimensionale glatte Untermannigfaltigkeit von $\R^3$.
+\end{example}
+
+\paragraph{(c) Global parametrisierte Untermannigfaltigkeiten}
+Es sei $W \subseteq \R^n$ offen und $\psi \colon W \rightarrow \R^{n+l}$ glatt mit Rang $D\psi(w)=n$ für alle $w \in W$. Es sei ferner $\psi \colon W \rightarrow \psi(W)$ Homöomorphismus.
+Dann ist $\psi(W)$ eine $C^\infty$-Untermannigfaltigkeit von $\R^{n+l}$ (nach Untermannigfaltigkeits-Kriterium (c) mit $U := \R^{n+l}$).
+\newline
+Für $n=2$ und $l=1$ heißt $\psi(W)$ eine \underline{parametrisierte Fläche} von $\R^3$.
+
+\begin{example}
+	\begin{enumerate}
+		\item Parametrisierung des Zylinders:
+			\newline
+			Betrachte die glatte Abbildung $\psi \colon (0, 2 \pi) \times \R \rightarrow \R^3, (t,s) \mapsto (\cos{(t)}, \sin{(t)}, s)$. Das Bild dieser Abbildung ist der Zylinder im $\R^3$ (wie oben, ohne eine Gerade).
+			Es gilt:
+			$$D\psi(t,s) = \begin{pmatrix} -\sin{(t)} & 0 \\ \cos{(t)} & 0 \\ 0 & 1  \end{pmatrix} $$ für alle $(t,s) \in \R^2$, und damit:
+			Rang $D \psi(t,s)=2$ für alle $(t,s) \in \R$, da $\sin$ und $\cos$ keine gemeinsamen Nullstellen haben.
+			\newline
+			Damit ist $\psi$ eine (globale) Parametrisierung des Zylinders.
+			
+		\item (Rotationsflächen im $\R^3$)
+			\newline
+			Rotiere für Konstanten $0 < r < a$ die Kurve $\gamma \colon [0,2\pi] \rightarrow \R^3, t \mapsto (a + r \cdot \cos{(t)}, 0, r \cdot \sin{(t)})$.
+			(TODO: Bild) in der $x_1 x_3$-Ebene:
+			$$\begin{pmatrix}
+				x \\ y \\z
+			\end{pmatrix} = \begin{pmatrix}
+			\cos{\Theta} & -\sin{\Theta} & 0 \\ \sin{\Theta} & \cos{\Theta} & 0 \\ 0 & 0 & 1
+\end{pmatrix} \begin{pmatrix}
+	a + r \cdot \cos{(t)} \\ 0 \\ r \cdot \sin{(t)}
+\end{pmatrix}$$
+
+	$$= \underbrace{\begin{pmatrix}
+	(a + r \cdot \cos{(t)}  \cos{(\Theta)} \\ (a + r \cdot \cos{(t)})  \sin{(\Theta)} \\ r \cdot \sin{(t)}
+	\end{pmatrix} }_{(*)}$$
+	Dann definiert $\Phi_\gamma \colon (0, 2\pi) \times (0, 2 \pi) \rightarrow \R^3, (\Theta, t) \mapsto (*)$
+	eine parametrisierte Fläche, den Rotationstorus.
+	\newline
+	$\bullet$ Der Rotationstorus $T \subseteq \R^3$ lässt sich als Niveaumnge definieren: 
+	$$T = \{(x,y,z) \in \R^3 \mid z^2 + (\sqrt{x^2+y^2}-a)^2 = r^2\}.$$
+	$\bullet$ Eine weitere (aus der Vorlesung bekannte) Darstellung des Torus ist
+	$$S^1 \times S^1 = \{(x_1,x_2,x_3,x_4) \in \R^4 \mid (x_1)^2 + (x_2)^2 = 1 \wedge (x_3)^2 + (x_4)^2 = 1 \},$$
+	und dies ist nicht die letzte Möglichkeit der Darstellung des Torus (siehe nächste Vorlesung) \ldots 
+	\end{enumerate}
+\end{example}
+
 \end{document}
