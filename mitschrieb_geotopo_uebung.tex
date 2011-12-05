@@ -640,4 +640,122 @@ Für $n=2$ und $l=1$ heißt $\psi(W)$ eine \underline{parametrisierte Fläche} v
 	\end{enumerate}
 \end{example}
 
+\chapter{05.12.2011}
+\section{Homotopieäquivalenzen}
+\paragraph{Definition}
+Für zwei topologische Räume $X,Y$ heißt eine $\underbrace{\text{stetige Abbildung }f \colon X \rightarrow Y}_{f \in C(X,Y)}$ \textbf{Homotopieäquivalenz}, falls es eine stetige Abbildung $g \colon Y \rightarrow X$ gibt, sodass $g \circ f \simeq id_x$ und $f \circ g \simeq id_Y$ gilt.
+
+\begin{proposition}
+	Es seien $X,Y$ topologische Räume. Die Relation "$\simeq$" ist eine Äquivalenzrelation auf $C(X,Y)$.
+\end{proposition}
+
+\begin{proof}
+	\begin{itemize}
+		\item Reflexivität: Es sei $f \in C(X,Y)$.
+			Definiere $H \colon X \times I \rightarrow Y, (x,t) \mapsto f(x)$.
+			Dann ist $H$ eine Homotopie von $f$ nach $f$, was die Reflexivität von "$\simeq$" zeigt.
+		\item Symmetrie: Es seien $f,g \in C(X,Y)$ mit $f \simeq g$, d.h. es existiert eine Homotopie $H$ von $f$ nach $g$. Definiere $G \colon X \times I \rightarrow Y, (x,t) \mapsto H(x,1-t)$.
+		Dann ist $G$ Homotopie von $g$ nach $f$ und die Symmetrie von "$\simeq$" gezeigt.
+		\item Transitivität: Es seien $f,g,h \in C(X,Y)$ mit $f \simeq g \simeq h$ durch die Homotopien $H_1$ und $H_2$. Definiere 
+			$$H \colon X \times I \rightarrow Y, (x,t) \mapsto \begin{cases} H_1(x,2t),& 0 \leq t \leq \frac{1}{2} \\ H_2(x,2t-1), & \frac{1}{2} \leq t \leq 1 \end{cases}$$
+			Dann gilt für alle $x \in X$:
+			\begin{itemize}
+				\item $H(x,0) = H_1(x,0)=f(x),$
+				\item $H(x,1) = H_2(x,1)=h(x),$
+			\end{itemize}
+			Für $t = \frac{1}{2}$ betrachte:
+			$$\lim\limits_{t \nearrow \frac{1}{2}}{H(x,t)} = \lim\limits_{t \nearrow \frac{1}{2}}{H_1(x,2t)} = H_1(x,1) = g(x),$$
+			$$\lim\limits_{t \searrow \frac{1}{2}}{H(x,t)} = \lim\limits_{t \searrow \frac{1}{2}}{H_2(x,2t-1)}=H_2(x,0)=g(x).$$
+			Damit ist $H$ Homotopie von $f$ nach $h$ und die Transitivität von "$\simeq$" gezeigt.
+	\end{itemize}
+\end{proof}
+
+\section{Beispiele zu Homotopien}
+\begin{enumerate}
+	\item \underline{Beh.:} Für einen topologischen Raum $X$ sind je zwei Abbildungen $f,g \colon X \rightarrow \R^n$ \footnote{\underline{Statt $\R^n$ reicht:} kontrahierbarer Raum} homotop.
+	\begin{proof}
+		Sei $X$ ein topologischer Raum, $f,g \in C(X,\R^n)$.
+		Definiere $H \colon X \times I \rightarrow \R^n, (x,t) \mapsto (1-t)f(x) + t \cdot g(x)$.
+		Dann ist $H$ Homotopie von $f$ nach $g$, eine \textbf{lineare} Homotopie.
+	\end{proof}
+	
+	\item \underline{Beh.:} Jede stetige Abbildung $\R^n \rightarrow Y, Y$ topologischer Raum, ist nullhomotop.
+	\begin{proof}
+		Es sei $Y$ topologischer Raum $f \in C(\R^n,Y)$.
+		Definiere $H \colon \R^n \times I \rightarrow Y, (x,t) \mapsto f((1-t)x).$
+		Dann gilt für alle $x \in \R^n:$
+		\begin{itemize}
+			\item $H(x,0)=f((1-0)x) = f(x),$
+			\item $H(x,1)=f((1-1)x) = f(0).$
+		\end{itemize}
+		Dann ist $H$ Homotopie $f$ nach $c_{f(0)} (=c \equiv f(0)).$
+	\end{proof}
+\end{enumerate}
+
+\paragraph{Definition:} Es seien $X,Y$ topologische Räume, $A \subseteq X$. Seien $f,g \in C(X,Y).$
+Es heißt \underline{$f$ relativ $A$ homotop zu $g$} (in Zeichen $f \simeq g \text{ rel } A$), falls eine Homotopie $H \colon X \times I \rightarrow Y$ von $f$ nach $g$ existiert, so dass $H(a,t)=H(a,0)$ für alle $a \in A, t \in I$.
+
+\begin{remark}{} Es seien $X,Y$ topologische Räume, $A \subseteq X$. Dann ist "Homotopie rel $A$" eine Äquivalenzrelation.
+\end{remark}
+
+\begin{proposition} Homotopieäquivalenz ist eine Äquivalenzrelation (auf der Klasse der topologischen Räume).
+\end{proposition}
+
+\begin{remark}
+	$ $
+	\begin{itemize}
+		\item Reflexivität: Es sei $X$ topologischer Raum.
+			Es gilt: $X \simeq X$ durch die Homotopieäquivalenz $\tilde{f},\tilde{g} := id_X$.
+		\item Symmetrie: Seien $X,Y$ topologische Räume mit $X \simeq Y$, d.h. es existieren $\tilde{f} \in C(X,Y), \tilde{g} \in C(Y,X)$ mit $\tilde{g} \circ \tilde{f} \simeq id_X, \tilde{f} \circ \tilde{g} \simeq id_Y$.
+		Definiere $f:= \tilde{g}, g:= \tilde{f}$.
+		Dann gilt $f \circ g \simeq id_X, g \circ f \simeq id_Y,\text{ d.h. }Y \simeq X.$
+		
+		\item Transitivität: Seien $X,Y,Z$ topologische Räume mit $X \simeq Y \simeq Z$, d.h. es existieren $f_1 \in C(X,Y), g_1 \in C(Y,X), f_2 \in C(Y,Z), g_2 \in C(Z,Y)$ mit
+		$$g_1 \circ f_1 \simeq id_X, f_1 \circ g_1 \simeq id_Y$$
+		$$g_2 \circ f_2 \simeq id_Y, f_2 \circ g_2 \simeq id_Z$$
+		Definiere $f := f_2 \circ f_1, g:= g_1 \circ g_2$. Dann gilt:
+		$$g \circ f \simeq id_X, f \circ g \simeq id_Z,$$
+		d.h. $X \simeq Z$.
+	\end{itemize}
+\end{remark}
+
+\section{Kontrahierbarkeit}
+Es sei $X$ ein topologischer Raum.
+
+\paragraph{Definition} Man nennt $X$ \textbf{kontrahierbar}, falls gilt: $X \simeq \{pt\}$.
+
+\begin{remark}
+	Es gilt:
+	$$X \text{ kontrahierbar } \Leftrightarrow id_X \text{ ist nullhomotop.}$$
+\end{remark}
+
+\begin{example}{}
+$ $
+\begin{itemize}
+	\item Es ist $\R^n$ kontrahierbar, \underline{denn}: \newline
+	Definiere $H \colon \R^n \times I \rightarrow \R^n, (x,t) \mapsto (1-t)x$.
+	Dann ist $H$ Homotopie von $id_X$ nach $c_0$, d.h. $\R^n$ ist kontrahierbar nach obiger Bemerkung.
+	\item Genauer ist jede \textbf{sternförmige}\footnote{Es existiert $x_0 \in M$, so dass für alle $x \in M$ gilt: $(1-t)x + t \cdot x_0 \in M$} (TODO:Bild 1) Teilmenge $M \subseteq \R^n$ kontrahierbar.
+		\begin{example}
+			$D^n, B^n$.
+		\end{example}
+\end{itemize}
+\end{example}
+
+\begin{remark}
+	$ $
+	\begin{itemize}
+		\item Kontrahierbarkeit ist eine topologische Invariante.
+		\item Kontrahierbare Räume sind einfach-zusammenhängend.
+	\end{itemize}
+\end{remark}
+
+\section{Deformationsretrakte}
+\paragraph{Behauptung:} $S^{n-1}$ ist (starker) Deformationsretrakt von $D^k\backslash \{0\}$. (TODO: Bild 2)
+
+\begin{proof}
+	Betrachte die Abbildung $$H \colon D^n \backslash \{0\} \times I \rightarrow D^n \backslash \{0\}, (x,t) \mapsto (1-t)x + t \cdot \frac{x}{||x||}$$
+	Definiere $r(x)= \frac{x}{||x||}$ für alle $x \in D^n \backslash \{0\}$.
+\end{proof}
+
 \end{document}
