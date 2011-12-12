@@ -55,6 +55,7 @@
 \newtheorem{fact}{Fakt}[chapter]
 \newtheorem{remark}{Bemerkung}[chapter]
 \newtheorem{example}{Beispiel}[chapter]
+\newtheorem{beh}{Behauptung}[chapter]
 % ============================================================================
 
 % == Abkürzungen für die reellen, natürlichen, ganzen,... Zahlen =============
@@ -593,8 +594,12 @@ so ist $f^{-1}(c)$ eine $n$-dimensionale glatte Untermannigfaltigkeit von $\R^{n
 
 \paragraph{(b)}
 \begin{example}
-	Der Graph der Abbildung $\varphi \colon \R \rightarrow \R^2, t \mapsto (\cos{(t)},\sin{(t)})$, d.h. die Menge $\{(\cos{(t)},\sin{(t)},t) \mid t \in \R\}$, die \underline{Helix}
-	\includegraphics[scale=0.4]{images/Helix.jpg}, ist eine 1-dimensionale glatte Untermannigfaltigkeit von $\R^3$.
+	Der Graph der Abbildung $\varphi \colon \R \rightarrow \R^2, t \mapsto (\cos{(t)},\sin{(t)})$, d.h. die Menge $\{(\cos{(t)},\sin{(t)},t) \mid t \in \R\}$, die \underline{Helix},
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{images/Helix.jpg}
+\end{figure}
+ ist eine 1-dimensionale glatte Untermannigfaltigkeit von $\R^3$.
 \end{example}
 
 \paragraph{(c) Global parametrisierte Untermannigfaltigkeiten}
@@ -758,5 +763,96 @@ $ $
 	Betrachte die Abbildung $$H \colon D^n \backslash \{0\} \times I \rightarrow D^n \backslash \{0\}, (x,t) \mapsto (1-t)x + t \cdot \frac{x}{||x||}$$
 	Definiere $r(x)= \frac{x}{||x||}$ für alle $x \in D^n \backslash \{0\}$.
 \end{proof}
+
+\chapter{12.12.2011}
+\section{Anwendungen zu Sätzen aus der Vorlesung}
+\begin{theorem}[Brouwerscher Fixpunktsatz]
+	Jede stetige Abbildung $f \colon D^2 \rightarrow D^2$ besitzt einen Fixpunkt, d.h. es ex. $x \in D^2$ mit $f(x)=x$.
+\end{theorem}
+
+\paragraph{Fundamentalsatz der Algebra}
+
+\begin{theorem}[Borsuk-Ulam]
+	Ist $f \colon S^2 \rightarrow \R^2$ stetig, so existiert ein $x \in S^2$ mit $f(x) = f(-x)$.
+\end{theorem}
+
+\begin{corollary}
+	Es lässt sich $S^2$ nicht in $\R^2$ einbetten.
+\end{corollary}
+
+\begin{corollary}
+	Auf der Erde existieren immer zwei verschiedene Punkte mit gleichem Luftdruck und gleicher Temperatur.	
+\end{corollary}
+
+\section{Homotopien und Fundamentalgruppe}
+\subsection{Der komplex projektive Raum $\C \Prim^n$}
+	Der komplex projektive Raum $\C \Prim^n = \{\text{komplexe Geraden durch } 0 \in \C^{n+1}\}$ = $\{\text{1-dim. komplexen linearen Teilräume von } \C^{n+1}\}$ lässt sich auch wie folgt darstellen:
+	\newline
+	Führt man auf $\C^{n+1} \backslash \{0\}$ durch 
+	$$v \sim w :\Leftrightarrow \exists \lambda \in \C \backslash \{0\} \colon \lambda v = w$$
+	eine Äquivalenzrelation ein, so kann man $\C \Prim^n$ mit $(\C^{n+1} \backslash \{0\})/_\sim$ identifizieren.
+	\newline
+	Betrachte $S^{2n+1} = \{v \in \C^{n+1} \mid || v || = 1\}$ als Teilraum von $\C^{n+1}$. Dann induziert die Inklusion $S^{2n+1} \hookrightarrow \C^{n+1} \backslash \{0\}$ einen Homöomorphismus $S^{2n+1} /_\sim \cong (\C^{n+1} \backslash \{0\}) /_\sim$.
+	\newline
+	Seine Inverse ist die von der radialen Projektion $$\C^{n+1} \backslash \{0\} \rightarrow S^{2n+1}, v \mapsto \frac{1}{||v||} v,$$ induzierte stetige Abbildung $(\C^{n+1} \backslash \{0\})/_\sim \cong S^{2n+1} /_\sim$. 
+	\newline
+	Da $S^{n+1}$ kompakt ist und die Äquivalenzklassen in $S^{2n+1}$ abgeschlossen sind, ist $\C \Prim^n \cong S^{2n+1} /_\sim$ kompakter Hausdorffraum.  
+	\begin{itemize}
+		\item \underline{$n = 0$}: $\C \Prim^0 = \{\text{komplexe Geraden durch } 0 \in \C\}$ ist ein einpunktiger Raum.
+		\item \underline{$n=1$}: $\C \Prim^1$ ist homöomorph zu $S^3 /_\sim = S^2$, und damit gilt: \newline $\pi_1(\C \Prim^1) = \{0\}$, denn nach Vorlesung gilt $\pi_1(S^n) = \{0\}$ für alle $n \geq 2$ und homöomorphe Räume haben isomorphe Fundamentalgruppen.
+		\newline
+		Der Homöomorphismus ist gegeben durch die folgende Abbildung
+		$$\varphi \colon \underbrace{S^3}_{\subseteq \C^2} \rightarrow S^2, \quad (z,w) \mapsto (2 \bar{z} w, |w|^2 - |z|^2),$$
+		welche einen Homöomorphismus $S^3 /_\sim \cong S^2$ induziert.
+	\end{itemize}
+
+Allgemein gilt: Für alle $n \in \N_0$ ist $\c \Prim^n$ einfach zusammenhängend (da wegzusammenhängend: $\pi_1(\C \Prim^n) = \{0\}$).
+
+\begin{remark}
+	Der reell projektive Raum $\R \Prim^n$ ist für \underline{kein} $n \in \N$ einfach zusammenhängend, seine Fundamentalgruppe ist \underline{nicht} trivial.
+\end{remark}
+
+\subsection{Die spezielle unitäre Gruppe $SU(n)$}
+Für $n \in \N$ betrachte die spezielle unitäre Gruppe $$SU(n) = \{ A \in \C^{n \times n} \mid A^* A = I_n, \det(A) = 1\}$$
+($A^*$ bezeichnet die "Adjungierte":  $A^* = \bar{A}^T$) \newline
+Es ist $SU(n)$ als Urbild abgeschlossener Mengen unter stetigen Abbildungen abgeschlossen in $\C^{n^2}$. Da die Spalten einer unitären Matrix orthonormal zueinander sind und somit Einheitsvektoren bilden, ist $SU(n)$ beschränkt. Nach dem Satz von Heine-Borel (welcher anwendbar ist, da $\C^{n^2} \cong \R^{2n^2}$) ist $SU(n)$ damit kompakt.
+\begin{itemize}
+	\item \underline{$n=1$}: $SU(1) = \{ z \in \C, \bar{z}z = 1, \det(z) = 1\} = \{1\}$ ist ein einpunktiger Raum.
+	\item \underline{$n=2$}: $SU(2)$ ist homöomorph zu $S^3$ und damit einfach zusammenhängend (mit gleicher Begründung wie für $\C \Prim ^1$). \newline
+	Zum Homöomorphismus:
+	\newline
+	Betrachte $S^3 = \{(z,w) \in \C^2 \mid |z|^2 + |w|^2 = 1 \}$ als Teilraum von $\C^2$.
+	Dann ist
+		$$\varphi \colon S^3 \rightarrow SU(2), \quad (z,w) \mapsto \begin{pmatrix}
+		z & -\bar{w} \\ w & \bar{z}
+		\end{pmatrix} $$
+	ein Homöomorphismus $S^3 \cong SU(2)$.
+	\item Allgemein gilt: Für jedes $n \in \N$ ist $SU(n)$ einfach zusammenhängend.
+\end{itemize}
+
+\subsection{Die Kreislinie $S^1 \subseteq \R^2$}
+
+\begin{beh}
+	$S^1$ ist nicht einfach zusammenhängend.
+	(TODO: Bild 1)
+\end{beh}
+Was sind geschlossene Wege in $S^1$?
+\newline
+Für $ k \in \Z$ definiere
+$$u_k \colon I \rightarrow S^1, \quad t \mapsto (\cos 2 \pi k t, \sin 2 \pi k t)$$
+Solche Schleifen lassen sich für $k \neq 0$ nicht zusammenziehen.
+
+\subsection{Das Möbiusband}
+Das Möbiusband $M$ entsteht durch Verklebung zweier gegenüberliegender Seiten im Einheitsquadrat $I^2$ in entgegengesetzter Richtung:
+$$M = I^2/_{[(0,t) \sim (1, 1-t)]}$$
+(TODO: Bild 2)
+\newline
+Es bezeichnet $p \colon I^2 \rightarrow M$ die Projektion und $S:= p(I \times \{\frac{1}{2}\})$.
+
+Man kann zeigen, dass $S$ ein Deformationsretrakt von $M$ ist.
+\newline
+Somit sind $S$ und $M$ vom selben Homotopietyp und damit $$\pi_1(M) \underbrace{\approx}_{\text{isomorph}} \pi_1(S).$$
+Andererseits gilt: $S$ ist homöomorph zu $S^1$ und somit: 
+$$\pi_1(S^1) \approx \pi_1(S) \approx \pi_1(M).$$
 
 \end{document}
