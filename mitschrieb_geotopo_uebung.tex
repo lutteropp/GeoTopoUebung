@@ -46,6 +46,7 @@
 % ============================================================================
 
 % == German definitions for theorems etc. ==================================== 
+\theoremstyle{definition}
 \newtheorem{definition}{Definition}[chapter]
 \newtheorem{theorem}{Satz}[chapter]
 \newtheorem{lemma}{Lemma}[chapter]
@@ -856,5 +857,77 @@ Man kann zeigen, dass $S$ ein Deformationsretrakt von $M$ ist.
 Somit sind $S$ und $M$ vom selben Homotopietyp und damit $$\pi_1(M) \underbrace{\approx}_{\text{isomorph}} \pi_1(S).$$
 Andererseits gilt: $S$ ist homöomorph zu $S^1$ und somit: 
 $$\pi_1(S^1) \approx \pi_1(S) \approx \pi_1(M).$$
+
+\chapter{19.12.2011}
+\section{Überlagerungen und Liftungen}
+
+\begin{definition}
+	Eine Überlagerung eines topologischen Raumes $X$ ist ein Raum $\widetilde{X}$ zusammen mit einer surjektiven stetigen Abbildung $\pi \colon \widetilde{X} \rightarrow X$, so dass für alle Punkte $x \in X$ eine Umgebung $U=U(x)$ existiert mit
+	\begin{enumerate}
+		\item $\pi^{-1}$ ist eine nichtleere Vereinigung paarweise disjunkter offener Mengen $\widetilde{U_j} \subseteq \widetilde{X}, j \in J$,
+		\item Für alle $j \in J$ ist $\pi \big |_{\widetilde{U_j}} \colon \widetilde{U_j} \rightarrow U$ ein Homöomorphismus.
+	\end{enumerate}
+\end{definition}
+
+[$\pi$ \underline{Überlagerungsabbildung}, $|J|$ \underline{Blätterzahl}, $\widetilde{X}$ \underline{Totalraum}, $X$ \underline{Basisraum}, $\pi^{-1}(x)$ \underline{Faser über $x$} (für $x \in X$)]
+
+(TODO: Bild 1)
+\newline
+\begin{definition}[Lift]
+	Ist $\pi \colon \widetilde{X} \rightarrow X$ eine Überlagerung, $f \colon [0,1] \rightarrow X$ ein Weg, so heißt $\widetilde{f} \colon [0,1] \rightarrow \widetilde{X}$ \underline{Lift} von $f$, falls $\pi \circ \widetilde{f} = f$ gilt.
+\end{definition}
+(TODO: Bild 2)
+\newline
+
+\section{Folgerungen aus dem Satz über das Hochheben von Homotopien}
+\begin{corollary}
+	Es sei $X$ ein topologischer Raum, $\pi \colon \widetilde{X} \rightarrow X$ eine Überlagerung, $x_0 \in X, \widetilde{x_0} \in \pi^{-1}(x_0)$. Weiter sei $f \colon S^1 \rightarrow X$ eine Schleife in $x_0$ und $\widetilde{f}$ der Lift von $f$ mit Anfangspunkt $\widetilde{x_0}$. Dann gilt:
+	$$\widetilde{f} \text{ ist Schleife } \Leftrightarrow [f] \in \pi_*(\pi_1(\widetilde{X}, \widetilde{x_0})),$$
+	wobei $\pi_* \colon \pi_1(\widetilde{X}, \widetilde{x_0}) \rightarrow \pi_1(X,x_0)$ die induzierte Abbildung bezeichne.
+\end{corollary}
+
+\begin{proof}
+	\underline{$"\Rightarrow"$:} Es sei $\widetilde{f}$ eine Schleife (d.h. ein \underline{geschlossener} Weg). Dann ist $[\widetilde{f}] \in \pi_1(\widetilde{X}, \widetilde{x_0})$ und somit:
+	$$[f] = [\pi \circ \widetilde{f}] = \pi_*([\widetilde{f}]) \in \pi_*(\pi_1(\widetilde{X}, \widetilde{x_0})).$$
+	\underline{$"\Leftarrow"$:} Es sei $[f] \in \pi_*(\pi_1(\widetilde{X}, \widetilde{x_0}))$.
+	\newline
+	Es sei $\widetilde{g}$ eine Schleife in $\widetilde{x_0}$ mit
+	$$[f] = \pi_*([\widetilde{g}]) = [\pi \circ \widetilde{g}].$$
+	Dann sind $f$ und $\pi \circ \widetilde{g}$ homotop vermöge einer Homotopie $H \colon f \simeq \pi \circ \widetilde{g}$. Es sei $H$ der Lift von $H$ mit $\widetilde{H_0} = \widetilde{f}$, $\widetilde{H_1} = \widetilde{g}$.
+	\newline
+	Nach dem Monodromie-Lemma haben alle Wege $\widetilde{H_t}$ den gleichen Endpunkt. Damit folgt:
+	$$\widetilde{f}(0) = \widetilde{x_0} = \widetilde{g}(1) = \widetilde{H_1}(1) \overset{\text{Monodromie-Lemma}}{=} \widetilde{H_0}(1) = \widetilde{f}(1).$$
+	Also ist $\widetilde{f}$ eine Schleife (in $\widetilde{x_0}$).
+\end{proof}
+
+\begin{corollary}
+	Es sei $X$ ein wegzusammenhängender topologischer Raum, der eine wegzusammenhängende nichttriviale Überlagerung $\pi \colon \widetilde{X} \rightarrow X$ besitze (d.h. $\pi$ ist mindestens zweiblättrig). Ist $x_0 \in X$, so gilt:
+	$$\pi_1(X,x_0) \neq \{1\}.$$
+\end{corollary}
+
+\begin{proof}
+	Sei $x_0 \in X$. Es seien $\widetilde{x_1}, \widetilde{x_2} \in \pi^{-1}(x_0)$ mit $\widetilde{x_1} \neq \widetilde{x_2}$. Ferner sei
+	$$\gamma \colon [0,1] \rightarrow \widetilde{X}$$ ein Weg von $\widetilde{x_1}$ zu $\widetilde{x_2}$.
+	(TODO: Bild 3) \newline
+	Dann ist $\pi \circ \gamma$ ein geschlossener weg in $X$, der sich \underline{nicht} in einen geschlossenen Weg liften lässt. es gilt also: $\pi \circ \gamma \in \pi_1(X,x_0)$. Nach obigem Korollar gilt aber: Der Lift von $\pi \circ \gamma$ ist nicht im Bild von $\pi_*(\pi_1(\widetilde{X}, \widetilde{x_0}))$. Somit gibt es ein Element in $\pi_1(X,x_0)$, welches nicht im Bild der induzierten Abbildung 
+	$$\pi_* \colon \pi_1(\widetilde{X}, \underbrace{\widetilde{x_0}}_{\in \pi^{-1}(x_0)}) \rightarrow \pi_1(X,x_0)$$ liegt.
+	\newline
+	Da $\pi_*$ ein Gruppenhomomorphismus ist, gilt sicher: $1 \in \pi_*(\pi_1(\widetilde{X},\widetilde{x_0}))$.
+	\newline
+	Also folgt: $\pi_1(X,x_0) \neq \{1\}$.
+\end{proof}
+
+\begin{example}
+	Die kanonische Projektion $S^2 \rightarrow S^2/_{[x \sim (-x)]} = \R \Prim^2$ ist eine zweiblättrige Überlagerung. (TODO: Bild 4)
+	\newline
+	Es sind sowohl $S^2$ als auch $\R \Prim^2$ wegzusammenhängend. Dann folgt mit dem Korollar: 
+	$$\pi_1(\R \Prim^2) \neq \{1\} \text{ (zu jedem beliebigen Basispunkt)}.$$
+	Nach Vorlesung ist $S^2$ einfach zusammenhängend (d.h. wegzusamenhängend und mit trivialer Fundamentalgruppe). Da homöomorphe Räume isomorphe Fundamentalgruppen haben, können also $S^2$ und $\R \Prim^2$ nicht homöomorph sein.
+\end{example}
+
+\begin{example}
+	Der Torus ist eine zweiblättrige Überlagerung der Kleinschen Flasche.
+	(TODO: Bild 5)
+\end{example}
 
 \end{document}

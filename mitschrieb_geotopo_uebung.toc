@@ -3,43 +3,46 @@
 \contentsline {chapter}{\numberline {1}24.10.2011}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Induzierte Topologie}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Offen und abgeschlossen}{3}{section.1.2}
-\contentsline {section}{\numberline {1.3}Basis der von der Standardmetrik auf dem ${\ensuremath {\@mathbb {R}}}^n$ definierten Topologie}{4}{section.1.3}
+\contentsline {section}{\numberline {1.3}Basis der von der Standardmetrik auf dem ${\ensuremath {\mathbb {R}}}^n$ definierten Topologie}{4}{section.1.3}
 \contentsline {section}{\numberline {1.4}Teilraumtopologie}{4}{section.1.4}
 \contentsline {section}{\numberline {1.5}Homotopie\IeC {\"a}quivalenz}{4}{section.1.5}
 \contentsline {chapter}{\numberline {2}31.10.2011}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}Universelle Eigenschaft der Teilraumtopologie}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}Hom\IeC {\"o}omorphismen}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Die Peano-Kurve}{7}{section.2.3}
-\contentsline {paragraph}{Verallgemeinerung}{7}{section*.3}
-\contentsline {subsection}{\numberline {2.3.1}Zugang mit Hilfe der Cantor-Menge $\@mathcal {C}$}{9}{subsection.2.3.1}
-\contentsline {chapter}{\numberline {3}07.11.2011}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Nachtr\IeC {\"a}ge und Wiederholungen zur Vorlesung}{10}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}\IeC {\"U}berdeckung, Teil\IeC {\"u}berdeckung und Kompaktheit}{10}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Wegzusammenhang}{11}{subsection.3.1.2}
-\contentsline {paragraph}{Beispiel eines Raumes, der zusammenh\IeC {\"a}ngend, aber nicht wegzusammenh\IeC {\"a}ngend ist}{11}{section*.4}
-\contentsline {chapter}{\numberline {4}14.11.2011}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Beispiele f\IeC {\"u}r Beweise im Kontext von Hausdorffr\IeC {\"a}umen}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Beispiele f\IeC {\"u}r Mannigfaltigkeiten}{13}{section.4.2}
-\contentsline {chapter}{\numberline {5}21.11.11}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Untermannigfaltigkeiten}{17}{section.5.1}
-\contentsline {section}{\numberline {5.2}Wichtige Spezialf\IeC {\"a}lle (und Beispiele) von Untermannigfaltigkeiten}{18}{section.5.2}
-\contentsline {paragraph}{(a) Niveaumengen}{18}{section*.5}
-\contentsline {paragraph}{(b)}{19}{section*.6}
-\contentsline {paragraph}{(c) Global parametrisierte Untermannigfaltigkeiten}{19}{section*.7}
-\contentsline {chapter}{\numberline {6}05.12.2011}{22}{chapter.6}
-\contentsline {section}{\numberline {6.1}Homotopie\IeC {\"a}quivalenzen}{22}{section.6.1}
-\contentsline {paragraph}{Definition}{22}{section*.8}
-\contentsline {section}{\numberline {6.2}Beispiele zu Homotopien}{23}{section.6.2}
-\contentsline {paragraph}{Definition:}{23}{section*.9}
-\contentsline {section}{\numberline {6.3}Kontrahierbarkeit}{24}{section.6.3}
-\contentsline {paragraph}{Definition}{24}{section*.10}
-\contentsline {section}{\numberline {6.4}Deformationsretrakte}{25}{section.6.4}
-\contentsline {paragraph}{Behauptung:}{25}{section*.11}
-\contentsline {chapter}{\numberline {7}12.12.2011}{26}{chapter.7}
-\contentsline {section}{\numberline {7.1}Anwendungen zu S\IeC {\"a}tzen aus der Vorlesung}{26}{section.7.1}
-\contentsline {paragraph}{Fundamentalsatz der Algebra}{26}{section*.12}
-\contentsline {section}{\numberline {7.2}Homotopien und Fundamentalgruppe}{26}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Der komplex projektive Raum ${\ensuremath {\@mathbb {C}}}{\ensuremath {\@mathbb {P}}}^n$}{26}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Die spezielle unit\IeC {\"a}re Gruppe $SU(n)$}{27}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Die Kreislinie $S^1 \subseteq {\ensuremath {\@mathbb {R}}}^2$}{28}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}Das M\IeC {\"o}biusband}{28}{subsection.7.2.4}
+\contentsline {section}{\numberline {2.3}Die Peano-Kurve}{8}{section.2.3}
+\contentsline {paragraph}{Verallgemeinerung}{8}{section*.3}
+\contentsline {subsection}{\numberline {2.3.1}Zugang mit Hilfe der Cantor-Menge $\mathcal {C}$}{8}{subsection.2.3.1}
+\contentsline {chapter}{\numberline {3}07.11.2011}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Nachtr\IeC {\"a}ge und Wiederholungen zur Vorlesung}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}\IeC {\"U}berdeckung, Teil\IeC {\"u}berdeckung und Kompaktheit}{9}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Wegzusammenhang}{10}{subsection.3.1.2}
+\contentsline {paragraph}{Beispiel eines Raumes, der zusammenh\IeC {\"a}ngend, aber nicht wegzusammenh\IeC {\"a}ngend ist}{10}{section*.4}
+\contentsline {chapter}{\numberline {4}14.11.2011}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Beispiele f\IeC {\"u}r Beweise im Kontext von Hausdorffr\IeC {\"a}umen}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Beispiele f\IeC {\"u}r Mannigfaltigkeiten}{12}{section.4.2}
+\contentsline {chapter}{\numberline {5}21.11.11}{16}{chapter.5}
+\contentsline {section}{\numberline {5.1}Untermannigfaltigkeiten}{16}{section.5.1}
+\contentsline {section}{\numberline {5.2}Wichtige Spezialf\IeC {\"a}lle (und Beispiele) von Untermannigfaltigkeiten}{17}{section.5.2}
+\contentsline {paragraph}{(a) Niveaumengen}{17}{section*.5}
+\contentsline {paragraph}{(b)}{18}{section*.6}
+\contentsline {paragraph}{(c) Global parametrisierte Untermannigfaltigkeiten}{18}{section*.7}
+\contentsline {chapter}{\numberline {6}05.12.2011}{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}Homotopie\IeC {\"a}quivalenzen}{21}{section.6.1}
+\contentsline {paragraph}{Definition}{21}{section*.8}
+\contentsline {section}{\numberline {6.2}Beispiele zu Homotopien}{22}{section.6.2}
+\contentsline {paragraph}{Definition:}{22}{section*.9}
+\contentsline {section}{\numberline {6.3}Kontrahierbarkeit}{23}{section.6.3}
+\contentsline {paragraph}{Definition}{23}{section*.10}
+\contentsline {section}{\numberline {6.4}Deformationsretrakte}{24}{section.6.4}
+\contentsline {paragraph}{Behauptung:}{24}{section*.11}
+\contentsline {chapter}{\numberline {7}12.12.2011}{25}{chapter.7}
+\contentsline {section}{\numberline {7.1}Anwendungen zu S\IeC {\"a}tzen aus der Vorlesung}{25}{section.7.1}
+\contentsline {paragraph}{Fundamentalsatz der Algebra}{25}{section*.12}
+\contentsline {section}{\numberline {7.2}Homotopien und Fundamentalgruppe}{25}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Der komplex projektive Raum ${\ensuremath {\mathbb {C}}}{\ensuremath {\mathbb {P}}}^n$}{25}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Die spezielle unit\IeC {\"a}re Gruppe $SU(n)$}{26}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Die Kreislinie $S^1 \subseteq {\ensuremath {\mathbb {R}}}^2$}{27}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Das M\IeC {\"o}biusband}{27}{subsection.7.2.4}
+\contentsline {chapter}{\numberline {8}19.12.2011}{29}{chapter.8}
+\contentsline {section}{\numberline {8.1}\IeC {\"U}berlagerungen und Liftungen}{29}{section.8.1}
+\contentsline {section}{\numberline {8.2}Folgerungen aus dem Satz \IeC {\"u}ber das Hochheben von Homotopien}{29}{section.8.2}
