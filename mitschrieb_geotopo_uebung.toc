@@ -37,7 +37,7 @@
 \contentsline {paragraph}{Behauptung:}{24}{section*.11}
 \contentsline {chapter}{\numberline {7}12.12.2011}{25}{chapter.7}
 \contentsline {section}{\numberline {7.1}Anwendungen zu S\IeC {\"a}tzen aus der Vorlesung}{25}{section.7.1}
-\contentsline {paragraph}{Fundamentalsatz der Algebra}{25}{section*.12}
+\contentsline {paragraph}{Fundamentalsatz der Algebra}{25}{shadetheorem.7.2}
 \contentsline {section}{\numberline {7.2}Homotopien und Fundamentalgruppe}{25}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Der komplex projektive Raum ${\ensuremath {\mathbb {C}}}{\ensuremath {\mathbb {P}}}^n$}{25}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Die spezielle unit\IeC {\"a}re Gruppe $SU(n)$}{26}{subsection.7.2.2}
@@ -46,3 +46,9 @@
 \contentsline {chapter}{\numberline {8}19.12.2011}{29}{chapter.8}
 \contentsline {section}{\numberline {8.1}\IeC {\"U}berlagerungen und Liftungen}{29}{section.8.1}
 \contentsline {section}{\numberline {8.2}Folgerungen aus dem Satz \IeC {\"u}ber das Hochheben von Homotopien}{29}{section.8.2}
+\contentsline {chapter}{\numberline {9}09.01.2012}{32}{chapter.9}
+\contentsline {section}{\numberline {9.1}\IeC {\"U}berlagerungen und Decktransformationen}{32}{section.9.1}
+\contentsline {section}{\numberline {9.2}Einschub Gruppenoperationen}{33}{section.9.2}
+\contentsline {paragraph}{Erinnerung}{33}{section*.13}
+\contentsline {paragraph}{Warum "universell"?}{35}{section*.14}
+\contentsline {paragraph}{Hauptresultat}{35}{section*.15}

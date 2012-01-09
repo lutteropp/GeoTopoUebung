@@ -17,6 +17,7 @@
 \usepackage{lmodern}
 \usepackage{subfig}
 \usepackage{stmaryrd}
+\usepackage{shadethm}
 % == Set the heading style ===================================================
 \setlength{\headheight}{14pt}
 \pagestyle{fancyplain}
@@ -47,8 +48,8 @@
 
 % == German definitions for theorems etc. ==================================== 
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\newtheorem{theorem}{Satz}[chapter]
+\newshadetheorem{definition}{Definition}[chapter]
+\newshadetheorem{theorem}{Satz}[chapter]
 \newtheorem{lemma}{Lemma}[chapter]
 \newtheorem{proposition}{Proposition}[chapter]
 \newtheorem{corollary}{Korollar}[chapter]
@@ -929,5 +930,123 @@ $$\pi_1(S^1) \approx \pi_1(S) \approx \pi_1(M).$$
 	Der Torus ist eine zweiblättrige Überlagerung der Kleinschen Flasche.
 	(TODO: Bild 5)
 \end{example}
+
+\chapter{09.01.2012}
+
+\section{Überlagerungen und Decktransformationen}
+
+\begin{definition}[lokal wegzusammenhängend]
+	Ein topologischer Raum $X$ heißt \underline{lokal wegzusammenhängend}, falls jede offene Umgebung $U$ eines Punktes $x \in X$ eine wegzusammenhängende Umgebung enthält, d.h. $\forall x \in X \quad \forall U = U(x) \quad \exists V \subseteq U \colon x \in V \text{ und } V \text{ wegzusammenhängend}.$
+\end{definition}
+
+\begin{remark}
+	Ein lokal wegzusammenhängender Raum ist genau dann wegzusammenhängend, wenn er zusammenhängend ist.
+\end{remark}
+
+\begin{example}
+	(TODO: Bild 1) Wegzusammenhängend, aber nicht lokal wegzusammenhängend.
+\end{example}
+
+\begin{definition}[Decktransformation]
+	Sei $X$ ein topologischer Raum. Eine \underline{Decktransformation} (oder \underline{-bewegung}) einer Überlagerung $\pi \colon \widetilde{X} \rightarrow X$ ist ein Homöomorphismus $d \colon \widetilde{X} \rightarrow \widetilde{X}$ mit $\pi = \pi \circ d$. (TODO: Bild 2)
+	\newline
+	(Alternativ: Decktransformationen überlagern die Identität $X \rightarrow X$. (TODO: Bild 3))
+\end{definition}
+
+\begin{example}
+	\begin{itemize}
+		\item Für $\pi \colon \R \rightarrow S^1, t \mapsto e^{2 \pi i t}$, sind die Deckbewegungen die ganzzahligen Translationen $\R \rightarrow \R, x \mapsto x + z$ mit $z \in \Z$; und für die Deckbewegungsgruppe erhält man $D \cong \Z$.
+		\item Für $\pi \colon \R^2 \rightarrow S^1 \times S^1 \cong T^2$ sind die Deckbewegungen die Translationen $\R^2 \rightarrow \R^2, (x,y) \mapsto (x+m, y+n)$ für $m,n \in \Z$; und es gilt: $D \cong \Z \times \Z$.
+		\item Für $\pi \colon S^1 \rightarrow S^1, z \mapsto z^n$ für $n \in \N$ sind die Deckbewegungen Drehungen um ein Vielfaches des Winkels $\frac{2 \pi}{n}$; und es gilt: $D \cong \Z /_{n \Z}$.
+	\end{itemize}
+\end{example}
+
+\section{Einschub Gruppenoperationen}
+\paragraph{Erinnerung}
+Eine \underline{topologische Gruppe} ist eine Gruppe $G$, die zugleich ein topologischer Raum ist, so dass
+$$G \times G \rightarrow G, (g,h) \mapsto gh,$$
+$$G \rightarrow G, g \mapsto g^{-1}$$
+stetig sind.
+
+Es seien $G$ eine topologische Gruppe, $X$ ein topologischer Raum.
+\begin{definition}
+	\begin{itemize}
+		\item Eine \underline{Operation} oder \underline{Wirkung} von $G$ auf $X$ ist eine stetige Abbildung 
+		$$G \times X \rightarrow X, (g,x) \mapsto g. x$$
+		mit folgenden Eigenschaften:
+		\begin{enumerate}
+			\item $\forall x \in X \colon e. x = x$ für das neutrale Element $e \in G$;
+			\item $\forall x \in X \quad \forall g_1, g_2 \in G \colon g_1.(g_2.x) = (g_1g_2).x$
+		\end{enumerate}
+		
+		\item Die Menge $G.x = \{ g.x \mid g \in G\}$ heißt \underline{Orbit} oder \underline{Bahn} von $x$ unter $G$.
+		
+		\item $G$ operiert \underline{transitiv} auf $X$, falls für alle $x,y \in X$ ein $g \in G$ existiert mit $g.x = y$.
+		
+		\item $G$ operiert \underline{eigentlich diskontinuierlich} auf $X$, falls zu jedem $x \in X$ eine Umgebung $U(x) = U$ existiert mit $g.U \cap U = \emptyset$ für alle $g \in G \backslash \{e\}$.
+		\newline
+		(Dann ist auch $g.U \cap g^\prime.U = \emptyset$ für alle $g, g^\prime \in G$ mit $g \neq g^\prime$.)
+	\end{itemize}
+\end{definition}
+
+\begin{theorem}
+	Es sei $X$ ein topologischer Raum, auf dem eine topologische Gruppe $G$ eigentlich diskontinuierlich wirkt. Dann ist $\pi \colon X \rightarrow X/_G$ auf den sogenannten \underline{Orbit-} oder \underline{Bahnenraum} $X/_G$ eine Überlagerung, deren Blätterzahl der Mächtigkeit von $G$ entspricht.
+\end{theorem}
+
+\begin{proof}
+	Für $x \in X$ sei $U$ eine Umgebung von $x$ mit $g.U \cap g^\prime.U = \emptyset$ für alle $g,g^\prime \in G$ mit $g \neq g^\prime$.
+	\newline
+	Dann ist $V = \pi(U) \subseteq X/_G$ eine (TODO: Bild 4) überlagerte Umgebung von $\pi(x)$ in $X/_G$ (da $\pi^{-1}(V) = \bigcup\limits_{g \in G}^\cdot {g.U} \text{ (disjunkte Vereinigung)}$.)
+	\newline
+	Die Blätter über $V$ sind die offenen Mengen $g.U$ für $g \in G$.
+\end{proof}
+
+\begin{example}
+	Die Gruppe $\Z^n$ operiert auf $\R^n$ durch $(a,x) \mapsto a+x$ eigentlich diskontinuierlich.
+	\newline
+	Daher ist $\pi \colon \R^n \rightarrow \R^n /_{\Z^n} \cong T^n$ eine unendlich-blättrige Überlagerung.
+	\newline
+	Es sei $f \colon \R^n/_{\Z^n} \rightarrow \underbrace{S^1 \times \ldots \times S^1}_{n \text{ Faktoren}}$ der Homöomorphismus $$\pi(x_1, \ldots, x_n) \mapsto (e^{2 \pi i x_1}, \ldots, e^{2 \pi i x_n})$$
+	Dann ist $f \circ \pi \colon \R^n \rightarrow S^1 \times \ldots \times S^1$ ebenfalls eine Überlagerung.
+\end{example}
+Verschärfung des Satzes:
+
+\begin{theorem}
+	Wirkt eine topologische Gruppe $G$ eigentlich diskontinuierlich auf einen wegzusammenhängenden und lokal wegzusammenhängenden topologischen Raum $X$, so ist die Projektion $\pi \colon X \rightarrow X/_G$ eine \underline{reguläre} Überlagerung mit Deckbewegungsgruppe $D=G$.
+\end{theorem}
+
+\begin{definition}[reguläre/normale Überlagerung]
+	Eine Überlagerung $\pi \colon \widetilde{X} \rightarrow X$ heißt \underline{regulär} (oder \underline{normal}), falls die Deckbewegungsgruppe transitiv auf $\pi^{-1}(x)$ für $x \in X$ operiert.
+\end{definition}
+
+\begin{definition}[semilokal einfach zusammenhängend]
+	Ein topologischer Raum heißt \underline{semilokal einfach zusammenhängend}, falls für jeden Punkt $x \in X$ eine Umgebung $U=U(x)$ existiert, so dass jeder in $U$ liegende geschlossene Weg \underline{in $X$} nullhomotop ist.
+\end{definition}
+
+\begin{theorem}[Klassifikationssatz für Überlagerungen]
+	Es sei $X$ ein wegzusammenhängender, lokal wegzusammenhängender und semilokal einfach zusammenhängender topologischer Raum, der eine einfach zusammenhängende (d.h. eine sogenannte \underline{universelle}) Überlagerung besitze.
+	\newline
+	Die Äquivalenzklassen der Überlagerungen mit Basispunkten, die auf $x_0 \in X$ abgebildet werden, entsprechen bijektiv den Untergruppen von $\pi_1(X,x)$.
+\end{theorem}
+
+(Die Bijektion ist gegeben durch $\widetilde{X} \leftrightarrow \pi_*(\pi_1(\widetilde{X}))$ für eine Überlagerung $\pi \colon \widetilde{X} \rightarrow X$.)
+
+\begin{example}
+	Die Untergruppen von $\pi_1(S^2) \cong \Z$ sind $n \Z$ für $n \in \N \cup \{0\}$.
+	\newline
+	Die zugehörigen Überlagerungen sind 
+	$$\pi \colon \R \rightarrow S^1, t \mapsto e^{2 \pi i t} \text{ für } n = 0,$$
+	$$\pi_n \colon S^1 \rightarrow S^1, z \mapsto z^n \text{ für } n \geq 1.$$
+\end{example}
+
+\begin{definition}[universelle Überlagerung]
+	Für einen wegzusammenhängenden Raum $X$ heißt eine Überlagerung $\pi \colon \widetilde{X} \rightarrow X$ \underline{universell}, falls $\widetilde{X}$ einfach zusammenhängend ist.
+\end{definition}
+
+\paragraph{Warum "universell"?}
+Eine einfach zusammenhängende Überlagerung überlagert selbst wieder jede andere Überlagerung und alle einfach zusammenhängenden Überlagerungen sind äquivalent.
+
+\paragraph{Hauptresultat}
+Jeder wegzusammenhängende, lokal wegzusammenhängende und semilokal einfach zusammenhängende topologische Raum besitzt eine universelle Überlagerung!
 
 \end{document}
