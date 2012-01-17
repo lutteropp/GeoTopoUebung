@@ -872,13 +872,17 @@ $$\pi_1(S^1) \approx \pi_1(S) \approx \pi_1(M).$$
 
 [$\pi$ \underline{Überlagerungsabbildung}, $|J|$ \underline{Blätterzahl}, $\widetilde{X}$ \underline{Totalraum}, $X$ \underline{Basisraum}, $\pi^{-1}(x)$ \underline{Faser über $x$} (für $x \in X$)]
 
-(TODO: Bild 1)
-\newline
+\begin{center}
+	\includegraphics[scale=0.5]{images/2011_12_19_Bild1.jpg}
+\end{center}
+
 \begin{definition}[Lift]
 	Ist $\pi \colon \widetilde{X} \rightarrow X$ eine Überlagerung, $f \colon [0,1] \rightarrow X$ ein Weg, so heißt $\widetilde{f} \colon [0,1] \rightarrow \widetilde{X}$ \underline{Lift} von $f$, falls $\pi \circ \widetilde{f} = f$ gilt.
 \end{definition}
-(TODO: Bild 2)
-\newline
+
+\begin{center}
+	\includegraphics[scale=0.5]{images/2011_12_19_Bild2.jpg}
+\end{center}
 
 \section{Folgerungen aus dem Satz über das Hochheben von Homotopien}
 \begin{corollary}
@@ -909,7 +913,10 @@ $$\pi_1(S^1) \approx \pi_1(S) \approx \pi_1(M).$$
 \begin{proof}
 	Sei $x_0 \in X$. Es seien $\widetilde{x_1}, \widetilde{x_2} \in \pi^{-1}(x_0)$ mit $\widetilde{x_1} \neq \widetilde{x_2}$. Ferner sei
 	$$\gamma \colon [0,1] \rightarrow \widetilde{X}$$ ein Weg von $\widetilde{x_1}$ zu $\widetilde{x_2}$.
-	(TODO: Bild 3) \newline
+	
+\begin{center}
+	\includegraphics[scale=0.5]{images/2011_12_19_Bild3.jpg}
+\end{center}
 	Dann ist $\pi \circ \gamma$ ein geschlossener weg in $X$, der sich \underline{nicht} in einen geschlossenen Weg liften lässt. es gilt also: $\pi \circ \gamma \in \pi_1(X,x_0)$. Nach obigem Korollar gilt aber: Der Lift von $\pi \circ \gamma$ ist nicht im Bild von $\pi_*(\pi_1(\widetilde{X}, \widetilde{x_0}))$. Somit gibt es ein Element in $\pi_1(X,x_0)$, welches nicht im Bild der induzierten Abbildung 
 	$$\pi_* \colon \pi_1(\widetilde{X}, \underbrace{\widetilde{x_0}}_{\in \pi^{-1}(x_0)}) \rightarrow \pi_1(X,x_0)$$ liegt.
 	\newline
@@ -919,8 +926,10 @@ $$\pi_1(S^1) \approx \pi_1(S) \approx \pi_1(M).$$
 \end{proof}
 
 \begin{example}
-	Die kanonische Projektion $S^2 \rightarrow S^2/_{[x \sim (-x)]} = \R \Prim^2$ ist eine zweiblättrige Überlagerung. (TODO: Bild 4)
-	\newline
+	Die kanonische Projektion $S^2 \rightarrow S^2/_{[x \sim (-x)]} = \R \Prim^2$ ist eine zweiblättrige Überlagerung. 
+\begin{center}
+	\includegraphics[scale=0.5]{images/2011_12_19_Bild4.jpg}
+\end{center}
 	Es sind sowohl $S^2$ als auch $\R \Prim^2$ wegzusammenhängend. Dann folgt mit dem Korollar: 
 	$$\pi_1(\R \Prim^2) \neq \{1\} \text{ (zu jedem beliebigen Basispunkt)}.$$
 	Nach Vorlesung ist $S^2$ einfach zusammenhängend (d.h. wegzusamenhängend und mit trivialer Fundamentalgruppe). Da homöomorphe Räume isomorphe Fundamentalgruppen haben, können also $S^2$ und $\R \Prim^2$ nicht homöomorph sein.
@@ -928,7 +937,10 @@ $$\pi_1(S^1) \approx \pi_1(S) \approx \pi_1(M).$$
 
 \begin{example}
 	Der Torus ist eine zweiblättrige Überlagerung der Kleinschen Flasche.
-	(TODO: Bild 5)
+	
+\begin{center}
+	\includegraphics[scale=0.5]{images/2011_12_19_Bild5.jpg}
+\end{center}
 \end{example}
 
 \chapter{09.01.2012}
@@ -944,13 +956,19 @@ $$\pi_1(S^1) \approx \pi_1(S) \approx \pi_1(M).$$
 \end{remark}
 
 \begin{example}
-	(TODO: Bild 1) Wegzusammenhängend, aber nicht lokal wegzusammenhängend.
+	
+\begin{center}
+	\includegraphics[scale=0.5]{images/2012_01_09_Bild1.jpg}
+\end{center} Wegzusammenhängend, aber nicht lokal wegzusammenhängend.
 \end{example}
 
 \begin{definition}[Decktransformation]
-	Sei $X$ ein topologischer Raum. Eine \underline{Decktransformation} (oder \underline{-bewegung}) einer Überlagerung $\pi \colon \widetilde{X} \rightarrow X$ ist ein Homöomorphismus $d \colon \widetilde{X} \rightarrow \widetilde{X}$ mit $\pi = \pi \circ d$. (TODO: Bild 2)
-	\newline
-	(Alternativ: Decktransformationen überlagern die Identität $X \rightarrow X$. (TODO: Bild 3))
+	Sei $X$ ein topologischer Raum. Eine \underline{Decktransformation} (oder \underline{-bewegung}) einer Überlagerung $\pi \colon \widetilde{X} \rightarrow X$ ist ein Homöomorphismus $d \colon \widetilde{X} \rightarrow \widetilde{X}$ mit $\pi = \pi \circ d$. \begin{center}
+	\includegraphics[scale=0.5]{images/2012_01_09_Bild2.jpg}
+\end{center}
+	(Alternativ: Decktransformationen überlagern die Identität $X \rightarrow X$. \begin{center}
+	\includegraphics[scale=0.5]{images/2012_01_09_Bild3.jpg}
+\end{center})
 \end{definition}
 
 \begin{example}
@@ -996,7 +1014,9 @@ Es seien $G$ eine topologische Gruppe, $X$ ein topologischer Raum.
 \begin{proof}
 	Für $x \in X$ sei $U$ eine Umgebung von $x$ mit $g.U \cap g^\prime.U = \emptyset$ für alle $g,g^\prime \in G$ mit $g \neq g^\prime$.
 	\newline
-	Dann ist $V = \pi(U) \subseteq X/_G$ eine (TODO: Bild 4) überlagerte Umgebung von $\pi(x)$ in $X/_G$ (da $\pi^{-1}(V) = \bigcup\limits_{g \in G}^\cdot {g.U} \text{ (disjunkte Vereinigung)}$.)
+	Dann ist $V = \pi(U) \subseteq X/_G$ eine \begin{center}
+	\includegraphics[scale=0.5]{images/2012_01_09_Bild4.jpg}
+\end{center} überlagerte Umgebung von $\pi(x)$ in $X/_G$ (da $\pi^{-1}(V) = \bigcup\limits_{g \in G}^\cdot {g.U} \text{ (disjunkte Vereinigung)}$.)
 	\newline
 	Die Blätter über $V$ sind die offenen Mengen $g.U$ für $g \in G$.
 \end{proof}
