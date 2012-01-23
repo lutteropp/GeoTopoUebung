@@ -93,7 +93,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \author{\myname{Sarah Lutteropp, Simon Bischof}}
 
-
+\newcommand{\RM}[1]{\MakeUppercase{\romannumeral #1{}}} 
 \newcommand{\OO}{{\ensuremath{\mathcal{O}}}}
 
 \begin{document}
@@ -1068,5 +1068,104 @@ Eine einfach zusammenhängende Überlagerung überlagert selbst wieder jede ande
 
 \paragraph{Hauptresultat}
 Jeder wegzusammenhängende, lokal wegzusammenhängende und semilokal einfach zusammenhängende topologische Raum besitzt eine universelle Überlagerung!
+
+\chapter{23.01.2012}
+\section{Geometrie von Flächen}
+
+\begin{definition}[Fläche in $\R^3$]
+	Eine \underline{Fläche in $\R^3$} ist eine glatte, 2-dimensionale Untermannigfaltigkeit von $\R^3$.
+\end{definition}
+
+\begin{remark}{}
+	$F \subset \R^3$ ist Fläche im $\R^3$ genau dann, wenn für jeden Punkt $x \in F$ eine Umgebung $U=U(x) \subseteq F$ existiert und $r \colon V \rightarrow \R^3$ für eine Umgebung $V \subset \R^2$, so dass gilt:
+	\begin{enumerate}
+		\item $r \colon V \rightarrow U$ ist Homöomorphismus,
+		\item $r(u,v) = (x(u,v), y(u,v), z(u,v))$ ist glatt,
+		\item $r_u := \frac{\partial r}{\partial u} = \left ( \frac{\partial x}{\partial u}, \frac{\partial y}{\partial u}, \frac{\partial z}{\partial u} \right )$ und $r_v := \frac{\partial r}{\partial v} = \left ( \frac{\partial x}{\partial v}, \frac{\partial y}{\partial v}, \frac{\partial z}{\partial v} \right )$ sind in jedem Punkt \footnote{von $V$} linear unabhängig.
+	\end{enumerate}
+\end{remark}
+
+\begin{example}{}
+\begin{itemize}
+	\item Torus:
+	\newline
+	Eine Parameterdarstellung des Torus ist für $a,b > 0$ gegeben durch
+	$$r(u,v) = (a + b \cdot \cos u) (\cos v \cdot e_1 + \sin v \cdot e_2) + b \cdot \sin u \cdot e_3$$
+	\item Allgem. Rotationsfläche: \newline
+	$$r(u,v) = f(u) (\cos v \cdot e_1 + \sin v \cdot e_2) + u \cdot e_3$$
+	$\Rightarrow$ Spezialfall: Zylinder
+	$$r(u,v) = a (\cos v \cdot e_1 + \sin v \cdot e_2) + u \cdot e_3$$
+	$$= (a \cdot \cos v, a \cdot \sin v, u)$$
+\end{itemize}
+\end{example}
+
+\begin{definition}[Bogenlänge einer glatten Kurve]
+	Die \underline{Bogenlänge} einer glatten Kurve $\gamma \colon [a,b] \rightarrow F$ in $F$ ist gegeben durch
+	$$L(\gamma) = \int\limits_a^b{|\gamma^\prime(t)|} dt = \int\limits_a^b{\sqrt{\gamma^\prime \cdot \gamma^\prime} dt} = \int\limits_a^b{\sqrt{(r_u u^\prime + r_v v^\prime) \cdot (r_u u^\prime + r_v v^\prime)} dt}$$
+	$$= \int\limits_a^b{\sqrt{E \cdot (u^\prime)^2 + 2 F \cdot u^\prime v^\prime + G \cdot (v^\prime)^2} dt}$$ mit $E:= r_u \cdot r_u, F:= r_u \cdot r_v, G := r_v \cdot r_v$.
+\end{definition}
+
+\begin{definition}[erste Fundamentalform]
+	Die \underline{erste Fundamentalform} einer Fläche im $\R^3$ ist gegeben durch
+	$$\RM{1} := E \cdot d u^2 + 2 F \cdot du \cdot dv + G \cdot dv^2$$ mit $E,F,G$ wie oben.
+\end{definition}
+
+\begin{example}[Erste Fundamentalform des Zylinders]
+	Parametrisierung des Zylinders ist gegeben durch
+	$$r(u,v) = (a \cdot \cos v, a \cdot \sin v, u).$$
+\end{example}
+\footnote{Hinweis: Fundamentalform ausrechnen lassen könnte in der Klausur drankommen.}
+Es gilt:
+$$r_u = \frac{\partial r}{\delta u} = (0,0,1),$$
+$$r_v = \frac{\partial r}{\partial u} = (-a \cdot \sin v, a \cdot \cos v, 0).$$
+Damit folgt:
+$$E = r_u \cdot r_u = 1,$$
+$$F = r_u \cdot r_v = 0,$$ \footnote{Hier überall Skalarprodukt!}
+$$G = r_v \cdot r_v = a^2.$$
+Also gilt für die erste Fundamentalform:
+$$\RM{1}_\text{Zylinder} = E du^2 + 2 F dudv + G dv^2$$
+$$= du^2 + a^2 dv^2$$
+
+\paragraph{Die Sphäre $S^2 \subseteq \R^3$}
+Eine Parameterdarstellung der Sphäre $S^2$ ist gegeben durch
+$$r(u,v) = (a \cdot \cos u \cos v, a \cdot \sin u \cos v, a \cdot \sin v)$$
+(für $a>0, u \in [0,2 \pi], v \in \left[ - \frac{\pi}{2}, \frac{\pi}{2} \right]$).
+
+Für die Tangentialvektoren $r_u$ und $r_v$ gilt:
+$$r_u = \frac{\partial r}{\partial u} = (- a \cdot \sin u \cos v, a \cdot \cos u \cos v, 0)$$
+$$r_v = \frac{\partial r}{\partial v} = (- a \cdot \cos u \sin v, -a \cdot \sin u \sin v, a \cdot \cos v)$$
+
+Der Tangentialraum $T_x S^2$ im Punkte $x \in S^2$ ist der Aufspann von $(r_u\circ r^{-1})(x)$ und $(r_v\circ r^{-1})(x)$.
+
+\paragraph{(Einheits-) \underline{Normalenvektoren}}
+Es gilt:
+$$r_u \times r_v = \begin{pmatrix}
+- a \cdot \sin u \cos v \\ a \cdot \cos u \cos v \\ 0
+\end{pmatrix} \times \begin{pmatrix}
+- a \cdot \cos v \sin v \\ -a \cdot \sin u \sin v \\ a \cdot \cos v
+\end{pmatrix} = a^2 \begin{pmatrix}
+\cos u \cos^2 v \\ \sin u \cos^2 v \\ \sin v \cos v
+\end{pmatrix}.$$ \footnote{Muss (für Einheitsnormalenvektoren) noch durch die Norm geteilt werden}
+\newline
+\hrulefill
+\newline \paragraph{Wiederholung Kreuzprodukt}
+für $a,b \in \R^3$ gilt:
+$$\begin{pmatrix}
+a_1 \\ a_2 \\ a_3
+\end{pmatrix} \times \begin{pmatrix}
+b_1 \\ b_2 \\ b_3
+\end{pmatrix} = \begin{pmatrix}
+a_2b_3 - a_3b_2 \\ a_3b_1 - a_1 b_3 \\ a_1 b_2 - a_2 b_1
+\end{pmatrix}$$
+
+\paragraph{Erste Fundamentalform}
+Es gilt:
+$$E = r_u \cdot r_u = a^2 \cdot \cos^2 v,$$
+$$F = r_u \cdot r_v = 0,$$
+$$G = r_v \cdot r_v = a^2.$$
+
+Damit folgt für die erste Fundamentalform:
+$$\RM{1}_\text{Sphäre} = E du^2 + 2 F du dv + G dv^2 = a^2 \cdot \cos^2 v du^2 + a^2 dv^2$$
+
 
 \end{document}

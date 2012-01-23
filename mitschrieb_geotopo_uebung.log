@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.9)  17 JAN 2012 22:14
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2011.10.9)  23 JAN 2012 16:49
 entering extended mode
  %&-line parsing enabled.
 **mitschrieb_geotopo_uebung.tex
@@ -857,7 +857,7 @@ LaTeX Info: Redefining \pageref on input line 99.
 \openout4 = `mitschrieb_geotopo_uebung.out'.
 
 
-<torus2.pdf, id=135, 241.73793pt x 175.65433pt>
+<torus2.pdf, id=143, 241.73793pt x 175.65433pt>
 File: torus2.pdf Graphic file (type pdf)
  <use torus2.pdf> [1
 
@@ -865,71 +865,66 @@ File: torus2.pdf Graphic file (type pdf)
 
 pdfTeX warning: pdflatex (file ./torus2.pdf): PDF inclusion: Page Group detecte
 d which pdfTeX can't handle. Ignoring it.
->] (./mitschrieb_geotopo_uebung.toc)
-\tf@toc=\write5
-\openout5 = `mitschrieb_geotopo_uebung.toc'.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.124 \chapter
-              {24.10.2011} [1
-
-]
-Kapitel 1.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 128.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+>] (./mitschrieb_geotopo_uebung.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 4.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 128.
-
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 4.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2007/01/14 v1.3 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 128
-.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 4.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2007/01/14 v1.3 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 128
-.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 4.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2007/01/14 v1.3 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 128.
+(Font)              <10.95> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 128.
+(Font)              <8> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 128.
-LaTeX Font Info:    Try loading font information for U+msa on input line 128.
+(Font)              <6> on input line 4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 128.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 128.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 4.
 
+(/usr/share/texmf/tex/latex/stmaryrd/Ustmry.fd)pdfTeX warning (ext4): destinati
+on with the same identifier (name{page.1}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.46 ...{\numberline {8}19.12.2011}{29}{chapter.8}
+                                                   [1
 
-(/usr/share/texmf/tex/latex/stmaryrd/Ustmry.fd)
+])
+\tf@toc=\write5
+\openout5 = `mitschrieb_geotopo_uebung.toc'.
+
+ [2]
+Kapitel 1.
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 141.
-
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2007/01/14 v1.3 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 141.
- [2
+ [3
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -972,19 +967,19 @@ Underfull \hbox (badness 1946) in paragraph at lines 207--208
  [] [] X \OMS/lmsy/m/n/10.95 ! \OML/lmm/m/it/10.95 Y$
  []
 
-[3] [4]
+[4] [5]
 Kapitel 2.
-<images/Universell_Diagramm.jpg, id=184, 306.4248pt x 250.536pt>
+<images/Universell_Diagramm.jpg, id=232, 306.4248pt x 250.536pt>
 File: images/Universell_Diagramm.jpg Graphic file (type jpg)
 
-<use images/Universell_Diagramm.jpg> [5
+<use images/Universell_Diagramm.jpg> [6
 
  <./images/Universell_Diagramm.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 275--292
 
  []
 
-<images/0_1_nach_S1_f_stetig.jpg, id=191, 673.5564pt x 363.759pt>
+<images/0_1_nach_S1_f_stetig.jpg, id=240, 673.5564pt x 363.759pt>
 File: images/0_1_nach_S1_f_stetig.jpg Graphic file (type jpg)
 
 <use images/0_1_nach_S1_f_stetig.jpg>
@@ -993,7 +988,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 295.
 
-<images/0_1_nach_S1_f-1_nicht_stetig.jpg, id=192, 648.021pt x 356.0502pt>
+<images/0_1_nach_S1_f-1_nicht_stetig.jpg, id=241, 648.021pt x 356.0502pt>
 File: images/0_1_nach_S1_f-1_nicht_stetig.jpg Graphic file (type jpg)
 
 <use images/0_1_nach_S1_f-1_nicht_stetig.jpg>
@@ -1001,14 +996,14 @@ Overfull \hbox (180.0pt too wide) in paragraph at lines 295--297
  [][][][][][] 
  []
 
-[6 <./images/0_1_nach_S1_f_stetig.jpg> <./images/0_1_nach_S1_f-1_nicht_stetig.j
+[7 <./images/0_1_nach_S1_f_stetig.jpg> <./images/0_1_nach_S1_f-1_nicht_stetig.j
 pg>]pdfTeX warning (ext4): destination with the same identifier (name{subfigure
 .2.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.307 \subfloat
                [Iteration 1]{\includegraphics[width=0.4\textwidth]{images/Pe...
-<images/PeanoKurve1.jpg, id=202, 149.8097pt x 149.8097pt>
+<images/PeanoKurve1.jpg, id=250, 149.8097pt x 149.8097pt>
 File: images/PeanoKurve1.jpg Graphic file (type jpg)
 
 <use images/PeanoKurve1.jpg>pdfTeX warning (ext4): destination with the same id
@@ -1017,30 +1012,30 @@ entifier (name{subfigure.2.1.2}) has been already used, duplicate ignored
                    \relax 
 l.308 \subfloat
                [Iteration 2]{\includegraphics[width=0.4\textwidth]{images/Pe...
-<images/PeanoKurve2.jpg, id=203, 149.8097pt x 149.8097pt>
+<images/PeanoKurve2.jpg, id=251, 149.8097pt x 149.8097pt>
 File: images/PeanoKurve2.jpg Graphic file (type jpg)
 
 <use images/PeanoKurve2.jpg>
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 318.
- [7 <./images/PeanoKurve1.jpg> <./images/PeanoKurve2.jpg>]
+ [8 <./images/PeanoKurve1.jpg> <./images/PeanoKurve2.jpg>]
 Kapitel 3.
 
 Underfull \hbox (badness 7722) in paragraph at lines 360--361
 []$[]$ \T1/lmr/m/n/10.95 Teil-men-gen eu-kli-di-scher,
  []
 
-[8
+[9
 
-] <images/Sinuseinsdurchx.png, id=222, 803.0pt x 342.27875pt>
+] <images/Sinuseinsdurchx.png, id=270, 803.0pt x 342.27875pt>
 File: images/Sinuseinsdurchx.png Graphic file (type png)
 
-<use images/Sinuseinsdurchx.png> [9] [10 <./images/Sinuseinsdurchx.png>]
+<use images/Sinuseinsdurchx.png> [10] [11 <./images/Sinuseinsdurchx.png>]
 Kapitel 4.
-<images/Kartenwechsel.jpg, id=244, 615.2586pt x 486.618pt>
+<images/Kartenwechsel.jpg, id=292, 615.2586pt x 486.618pt>
 File: images/Kartenwechsel.jpg Graphic file (type jpg)
 
-<use images/Kartenwechsel.jpg> [11
+<use images/Kartenwechsel.jpg> [12
 
 ]
 Underfull \hbox (badness 2961) in paragraph at lines 469--470
@@ -1049,10 +1044,10 @@ MS/lmsy/m/n/10.95 ^^N \OML/lmm/m/it/10.95 id[] [] [] \OT1/lmr/m/n/10.95 (\OML/l
 mm/m/it/10.95 a; b\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 !
  []
 
-<images/S1.jpg, id=254, 364.7226pt x 363.759pt>
+<images/S1.jpg, id=303, 364.7226pt x 363.759pt>
 File: images/S1.jpg Graphic file (type jpg)
- <use images/S1.jpg> [12 <./images/Kartenwechsel.jpg> <./images/S1.jpg>]
-<images/Stereographie.jpg, id=260, 590.6868pt x 331.4784pt>
+ <use images/S1.jpg> [13 <./images/Kartenwechsel.jpg> <./images/S1.jpg>]
+<images/Stereographie.jpg, id=308, 590.6868pt x 331.4784pt>
 File: images/Stereographie.jpg Graphic file (type jpg)
 
 <use images/Stereographie.jpg>
@@ -1061,7 +1056,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 497--499
 msy/m/n/10.95 ^^@$\T1/lmr/m/n/10.95 Diffeomorphismus[]
  []
 
-[13 <./images/Stereographie.jpg>] [14]
+[14 <./images/Stereographie.jpg>] [15]
 Kapitel 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 547--551
@@ -1083,7 +1078,7 @@ Underfull \hbox (badness 1776) in paragraph at lines 547--551
 0.95 , ver-se-hen mit der Teil-raum-to-po-lo-gie,
  []
 
-[15
+[16
 
 ]
 Underfull \hbox (badness 2158) in paragraph at lines 582--589
@@ -1095,18 +1090,18 @@ s-tiert ei-ne $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 l \OMS/lmsy/m/n/10.95 ^^
 B \OML/lmm/m/it/10.95 l\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 -
  []
 
-<images/Zylinder.jpg, id=278, 574.3056pt x 529.4982pt>
+<images/Zylinder.jpg, id=326, 574.3056pt x 529.4982pt>
 File: images/Zylinder.jpg Graphic file (type jpg)
 
-<use images/Zylinder.jpg> [16]
-<images/Helix.jpg, id=285, 574.3056pt x 479.8728pt>
+<use images/Zylinder.jpg> [17]
+<images/Helix.jpg, id=333, 574.3056pt x 479.8728pt>
 File: images/Helix.jpg Graphic file (type jpg)
  <use images/Helix.jpg>
-[17 <./images/Zylinder.jpg> <./images/Helix.jpg>]
-<images/Torus_Rotation.jpg, id=293, 574.3056pt x 479.8728pt>
+[18 <./images/Zylinder.jpg> <./images/Helix.jpg>]
+<images/Torus_Rotation.jpg, id=342, 574.3056pt x 479.8728pt>
 File: images/Torus_Rotation.jpg Graphic file (type jpg)
 
-<use images/Torus_Rotation.jpg> [18 <./images/Torus_Rotation.jpg>] [19]
+<use images/Torus_Rotation.jpg> [19 <./images/Torus_Rotation.jpg>] [20]
 Kapitel 6.
 
 Overfull \hbox (56.6694pt too wide) in paragraph at lines 653--654
@@ -1114,71 +1109,71 @@ Overfull \hbox (56.6694pt too wide) in paragraph at lines 653--654
 e Räu-me $\OML/lmm/m/it/10.95 X; Y$ \T1/lmr/m/n/10.95 heiÿt ei-ne $[]$
  []
 
-[20
+[21
 
-] [21] <images/sternfoermig.jpg, id=323, 376.7676pt x 377.2494pt>
+] [22] <images/sternfoermig.jpg, id=371, 376.7676pt x 377.2494pt>
 File: images/sternfoermig.jpg Graphic file (type jpg)
 
 <use images/sternfoermig.jpg>
-<images/Deformationsretrakt_S1_D2.jpg, id=324, 486.618pt x 453.8556pt>
+<images/Deformationsretrakt_S1_D2.jpg, id=372, 486.618pt x 453.8556pt>
 File: images/Deformationsretrakt_S1_D2.jpg Graphic file (type jpg)
 
-<use images/Deformationsretrakt_S1_D2.jpg> [22 <./images/sternfoermig.jpg>]
-[23 <./images/Deformationsretrakt_S1_D2.jpg>]
+<use images/Deformationsretrakt_S1_D2.jpg> [23 <./images/sternfoermig.jpg>]
+[24 <./images/Deformationsretrakt_S1_D2.jpg>]
 Kapitel 7.
-[24
+[25
 
-] [25] <images/S1_nichttrivialer_Weg.jpg, id=359, 362.3136pt x 361.35pt>
+] [26] <images/S1_nichttrivialer_Weg.jpg, id=407, 362.3136pt x 361.35pt>
 File: images/S1_nichttrivialer_Weg.jpg Graphic file (type jpg)
 
 <use images/S1_nichttrivialer_Weg.jpg>
-<images/Moebiusband.jpg, id=360, 669.2202pt x 376.7676pt>
+<images/Moebiusband.jpg, id=408, 669.2202pt x 376.7676pt>
 File: images/Moebiusband.jpg Graphic file (type jpg)
 
-<use images/Moebiusband.jpg> [26 <./images/S1_nichttrivialer_Weg.jpg>] [27 <./i
+<use images/Moebiusband.jpg> [27 <./images/S1_nichttrivialer_Weg.jpg>] [28 <./i
 mages/Moebiusband.jpg>]
 Kapitel 8.
-<images/2011_12_19_Bild1.jpg, id=372, 245.2362pt x 486.1362pt>
+<images/2011_12_19_Bild1.jpg, id=420, 245.2362pt x 486.1362pt>
 File: images/2011_12_19_Bild1.jpg Graphic file (type jpg)
 
-<use images/2011_12_19_Bild1.jpg> [28
+<use images/2011_12_19_Bild1.jpg> [29
 
 ]
-<images/2011_12_19_Bild2.jpg, id=380, 302.0886pt x 225.0006pt>
+<images/2011_12_19_Bild2.jpg, id=428, 302.0886pt x 225.0006pt>
 File: images/2011_12_19_Bild2.jpg Graphic file (type jpg)
 
-<use images/2011_12_19_Bild2.jpg> [29 <./images/2011_12_19_Bild1.jpg> <./images
+<use images/2011_12_19_Bild2.jpg> [30 <./images/2011_12_19_Bild1.jpg> <./images
 /2011_12_19_Bild2.jpg>]
-<images/2011_12_19_Bild3.jpg, id=387, 315.579pt x 402.303pt>
+<images/2011_12_19_Bild3.jpg, id=436, 315.579pt x 402.303pt>
 File: images/2011_12_19_Bild3.jpg Graphic file (type jpg)
 
-<use images/2011_12_19_Bild3.jpg> [30 <./images/2011_12_19_Bild3.jpg>]
-<images/2011_12_19_Bild4.jpg, id=394, 646.5756pt x 426.8748pt>
+<use images/2011_12_19_Bild3.jpg> [31 <./images/2011_12_19_Bild3.jpg>]
+<images/2011_12_19_Bild4.jpg, id=442, 646.5756pt x 426.8748pt>
 File: images/2011_12_19_Bild4.jpg Graphic file (type jpg)
 
 <use images/2011_12_19_Bild4.jpg>
-<images/2011_12_19_Bild5.jpg, id=395, 704.8734pt x 271.2534pt>
+<images/2011_12_19_Bild5.jpg, id=443, 704.8734pt x 271.2534pt>
 File: images/2011_12_19_Bild5.jpg Graphic file (type jpg)
 
-<use images/2011_12_19_Bild5.jpg> [31 <./images/2011_12_19_Bild4.jpg> <./images
+<use images/2011_12_19_Bild5.jpg> [32 <./images/2011_12_19_Bild4.jpg> <./images
 /2011_12_19_Bild5.jpg>]
 Kapitel 9.
-<images/2012_01_09_Bild1.jpg, id=402, 472.6458pt x 195.6108pt>
+<images/2012_01_09_Bild1.jpg, id=450, 472.6458pt x 195.6108pt>
 File: images/2012_01_09_Bild1.jpg Graphic file (type jpg)
 
 <use images/2012_01_09_Bild1.jpg>
-<images/2012_01_09_Bild2.jpg, id=403, 309.3156pt x 255.354pt>
+<images/2012_01_09_Bild2.jpg, id=451, 309.3156pt x 255.354pt>
 File: images/2012_01_09_Bild2.jpg Graphic file (type jpg)
 
 <use images/2012_01_09_Bild2.jpg>
-<images/2012_01_09_Bild3.jpg, id=404, 309.3156pt x 273.6624pt>
+<images/2012_01_09_Bild3.jpg, id=452, 309.3156pt x 273.6624pt>
 File: images/2012_01_09_Bild3.jpg Graphic file (type jpg)
 
-<use images/2012_01_09_Bild3.jpg> [32
+<use images/2012_01_09_Bild3.jpg> [33
 
- <./images/2012_01_09_Bild1.jpg>] [33 <./images/2012_01_09_Bild2.jpg> <./images
+ <./images/2012_01_09_Bild1.jpg>] [34 <./images/2012_01_09_Bild2.jpg> <./images
 /2012_01_09_Bild3.jpg>]
-<images/2012_01_09_Bild4.jpg, id=419, 93.951pt x 171.039pt>
+<images/2012_01_09_Bild4.jpg, id=467, 93.951pt x 171.039pt>
 File: images/2012_01_09_Bild4.jpg Graphic file (type jpg)
 
 <use images/2012_01_09_Bild4.jpg>
@@ -1190,42 +1185,61 @@ m/n/10.95 (\OML/lmm/m/it/10.95 V\OT1/lmr/m/n/10.95 ) = [] [][]$\T1/lmr/m/n/10.9
 5 .) 
  []
 
-[34 <./images/2012_01_09_Bild4.jpg>]
+[35 <./images/2012_01_09_Bild4.jpg>]
 Underfull \hbox (badness 1946) in paragraph at lines 1039--1040
 []\T1/lmr/bx/n/10.95 Definition 9.4 \T1/lmr/m/n/10.95 (re-gu-lä-re/normale Über
 -la-ge-rung)\T1/lmr/bx/n/10.95 . []\T1/lmr/m/n/10.95 Ei-ne Über-la-ge-rung
  []
 
-[35] [36] (./mitschrieb_geotopo_uebung.aux) ) 
+[36] [37]
+Kapitel 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1095
+
+ []
+
+[38
+
+] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1151
+
+ []
+
+[40] (./mitschrieb_geotopo_uebung.aux) ) 
 Here is how much of TeX's memory you used:
- 9484 strings out of 256216
- 141550 string characters out of 1917072
- 212993 words of memory out of 1500000
- 12245 multiletter control sequences out of 10000+200000
+ 9506 strings out of 256216
+ 141788 string characters out of 1917072
+ 213003 words of memory out of 1500000
+ 12248 multiletter control sequences out of 10000+200000
  95696 words of font info for 96 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  45i,15n,61p,445b,642s stack positions out of 5000i,500n,6000p,200000b,15000s
-{/usr/share/texmf/fonts/enc/dvips/
-lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/tex
-mf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.
-enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/
-type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmsy9.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm10.pfb></usr/share/tex
-mf/fonts/type1/bluesky/ams/msbm7.pfb></usr/share/texmf/fonts/type1/hoekwater/st
-maryrd/stmary10.pfb>
-Output written on mitschrieb_geotopo_uebung.pdf (37 pages, 1400099 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fo
+nts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{
+/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1
+/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy
+9.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm10.pfb></usr/share/texmf/fo
+nts/type1/bluesky/ams/msbm7.pfb></usr/share/texmf/fonts/type1/hoekwater/stmaryr
+d/stmary10.pfb>
+Output written on mitschrieb_geotopo_uebung.pdf (41 pages, 1425412 bytes).
 PDF statistics:
- 561 PDF objects out of 1000 (max. 8388607)
- 170 named destinations out of 1000 (max. 131072)
- 403 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 638 PDF objects out of 1000 (max. 8388607)
+ 189 named destinations out of 1000 (max. 131072)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 
