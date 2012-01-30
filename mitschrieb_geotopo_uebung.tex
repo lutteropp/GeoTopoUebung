@@ -1174,4 +1174,86 @@ Aufgabe 5 außerhalb der Wertung
 $\Rightarrow$ 48 Punkte zu erreichen
 $\Rightarrow$ 24 Punkte und mehr: bestanden
 
+\chapter{30.01.2012}
+\paragraph{Vortragsankündigung}
+Vortrag "Krümmung und Symmetrie" (Prof. A. Dessai)
+Di. 31.01. 17:30 Uhr im Neuen HS (Architektur)
+
+\section{Nachtrag zur Topologie von Flächen}
+\paragraph{Behauptung:} Es gilt:
+\begin{enumerate}
+	\item $\R \Prim^2 \# \R \Prim^2 \cong K^2$
+	\item $\R \Prim^2 \# \R \Prim^2 \# \R \Prim^2 \cong T^2 \# \R \Prim^2$
+\end{enumerate}
+
+\begin{lemma}
+	Es bezeichne $x$ eine Seite eines Polygons mit gerader Seitenzahl, $P$ und $Q$ seien jeweils eine Folge von Seiten desselben.
+	Es gilt:
+	$$xxP^{-1}Q \cong \widetilde{x} P \widetilde{x} Q.$$
+	\footnote{"Classification of Surfaces" (R. Koch)}
+\end{lemma}
+
+\begin{proof}
+	\begin{center}
+		\includegraphics[scale=0.3]{images/2012_01_30_Bild1.jpg}
+	\end{center}
+	\footnote{$(p_1^{-1} p_2^{-1} p_3)^{-1} = p_3^{-1} p_2 p_1$}
+\end{proof}
+
+\begin{lemma}
+	Die zusammenhängende Summe $\#_{i=1}^g{\R \Prim^2}$ lässt sich als $2g$-seitiges Polygon mit den Symbolen $x_1x_1x_2x_2 \cdots x_gx_g$ darstellen.
+\end{lemma}
+
+\begin{proof}{(per Induktion über $g$:)}
+	\begin{itemize}
+		\item \underline{g=1:} 
+	\includegraphics[scale=0.3]{images/2012_01_30_Bild2.jpg} $\cong \R \Prim^2$ (nach VL)
+	\includegraphics[scale=0.3]{images/2012_01_30_Bild3.jpg}
+		\item Die Behauptung gelte für die zusammenhängende Summe von $g$ Kopien des $\R \Prim^2$.
+		\begin{center}
+		\includegraphics[scale=0.3]{images/2012_01_30_Bild4.jpg}
+	\end{center}
+	\end{itemize}
+\end{proof}
+
+\newpage 
+
+\begin{proof}{Beweis der Behauptung:}
+	\begin{enumerate}
+		\item (1) \begin{center}
+		\includegraphics[scale=0.3]{images/2012_01_30_Bild5.jpg}
+	\end{center}
+		\item (2)
+		$T^2 \# \R \Prim^2 \cong $
+		\begin{center}
+		\includegraphics[scale=0.3]{images/2012_01_30_Bild6.jpg}
+	\end{center}
+		$T^2 \# \R \Prim^2$ lässt sich als 6-seitiges Polygon mit den Symbolen $ccaba^{-1}b^{-1}$ darstellen.
+		
+		Iteriertes Anwenden von Lemma 1 liefert:
+		$$cc(ab)(a^{-1}b^{-1}) \overset{Lemma 1}{\cong} \widetilde{c} (ab)^{-1} \widetilde{c} (a^{-1}b^{-1}) \cong \widetilde{c} b^{-1} a^{-1} \widetilde{c} (a^{-1} b^{-1}) = b^{-1}a^{-1}\widetilde{c} a^{-1} b^{-1} \widetilde{c}$$
+		$$\overset{Lemma 1}{\cong} \widetilde{b} \widetilde{b} (a^{-1} \widetilde{c} a^{-1})^{-1} \widetilde{c} \cong \widetilde{b} \widetilde{b} a \widetilde{c}^{-1} a \widetilde{c} \cong (\widetilde{c} \widetilde{b} \widetilde{b}) a (\widetilde{c}^{-1}) a$$
+		$$\overset{Lemma 1}{\cong} \widetilde{a} \widetilde{a} \widetilde{c} \widetilde{c} \widetilde{b} \widetilde{b}.$$
+	\end{enumerate}
+\end{proof}
+
+\section{Berechnung des Flächeninhalts der Sphäre $S^2$}
+Eine Parametrisierung der Sphäre $S^2$ ist gegeben durch
+$$r \underbrace{\colon [0,2 \pi] \times [- \frac{\pi}{2}, \frac{\pi}{2}]}_{V} \rightarrow \R^3, (\varphi, \Theta) \mapsto (\cos \varphi \cos \Theta, \sin \varphi \cos \Theta, \sin \Theta)$$
+
+$$\boxed{A = \int_V{\sqrt{EG - F^2} d \varphi d \Theta}}$$
+
+$$r_\varphi = \frac{\partial r}{\partial \varphi} = (- \sin \varphi \cos \Theta, \cos \varphi \cos \Theta, 0)$$
+$$r_\Theta = \frac{\partial r}{\partial \Theta} = (- \cos \varphi \sin \Theta, - \sin \varphi \sin \Theta, \cos \Theta)$$
+
+Aus diesen Tangentialvektoren ergeben sich die Koeffizienten der ersten Fundamentalform:
+
+$$E = r_\varphi \cdot r_\varphi = \cos^2 \Theta,$$
+$$F = r_\varphi \cdot r_\Theta = 0,$$
+$$G = r_\Theta \cdot r_\Theta = 1.$$
+
+Für den Flächeninhalt gilt damit:
+
+$$A = \int_V{\sqrt{EG-F} d \varphi d \Theta} = 2 \pi \int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}}{\cos \Theta d \Theta} = 2 \pi \left(\sin \left(\frac{\pi}{2} \right) - \sin \left(-\frac{\pi}{2}\right) \right)= 4 \pi.$$
+
 \end{document}
