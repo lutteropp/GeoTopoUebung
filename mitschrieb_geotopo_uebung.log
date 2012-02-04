@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.25)  2 FEB 2012 15:25
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.25)  4 FEB 2012 13:02
 entering extended mode
  %&-line parsing enabled.
 **mitschrieb_geotopo_uebung.tex
@@ -1212,35 +1212,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 1148--1151
 
 [40]
 Kapitel 11.
-<images/2012_01_30_Bild1.jpg, id=534, 1284.8pt x 578.16pt>
+<images/2012_01_30_Bild1.jpg, id=534, 1069.1142pt x 503.9628pt>
 File: images/2012_01_30_Bild1.jpg Graphic file (type jpg)
 
-<use images/2012_01_30_Bild1.jpg>
-Overfull \hbox (25.44298pt too wide) in paragraph at lines 1198--1199
- [] 
- []
-
-[41
+<use images/2012_01_30_Bild1.jpg> [41
 
  <./images/2012_01_30_Bild1.jpg>]
-<images/2012_01_30_Bild2.jpg, id=544, 192.72pt x 128.48pt>
+<images/2012_01_30_Bild2.jpg, id=545, 168.1482pt x 137.7948pt>
 File: images/2012_01_30_Bild2.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild2.jpg>
-<images/2012_01_30_Bild3.jpg, id=545, 385.44pt x 321.2pt>
+<images/2012_01_30_Bild3.jpg, id=546, 424.9476pt x 344.487pt>
 File: images/2012_01_30_Bild3.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild3.jpg>
-<images/2012_01_30_Bild4.jpg, id=546, 1027.84pt x 642.4pt>
+<images/2012_01_30_Bild4.jpg, id=547, 925.5378pt x 502.5174pt>
 File: images/2012_01_30_Bild4.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild4.jpg> [42 <./images/2012_01_30_Bild2.jpg> <./images
 /2012_01_30_Bild3.jpg> <./images/2012_01_30_Bild4.jpg>]
-<images/2012_01_30_Bild5.jpg, id=553, 963.6pt x 642.4pt>
+<images/2012_01_30_Bild5.jpg, id=553, 688.0104pt x 348.8232pt>
 File: images/2012_01_30_Bild5.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild5.jpg>
-<images/2012_01_30_Bild6.jpg, id=554, 1027.84pt x 449.68pt>
+<images/2012_01_30_Bild6.jpg, id=554, 675.4836pt x 489.027pt>
 File: images/2012_01_30_Bild6.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild6.jpg>
@@ -1298,7 +1293,7 @@ mf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy
 9.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm10.pfb></usr/share/texmf/fo
 nts/type1/bluesky/ams/msbm7.pfb></usr/share/texmf/fonts/type1/hoekwater/stmaryr
 d/stmary10.pfb>
-Output written on mitschrieb_geotopo_uebung.pdf (45 pages, 1691406 bytes).
+Output written on mitschrieb_geotopo_uebung.pdf (45 pages, 1892888 bytes).
 PDF statistics:
  686 PDF objects out of 1000 (max. 8388607)
  204 named destinations out of 1000 (max. 131072)
