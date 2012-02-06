@@ -1256,4 +1256,81 @@ Für den Flächeninhalt gilt damit:
 
 $$A = \int_V{\sqrt{EG-F} d \varphi d \Theta} = 2 \pi \int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}}{\cos \Theta d \Theta} = 2 \pi \left(\sin \left(\frac{\pi}{2} \right) - \sin \left(-\frac{\pi}{2}\right) \right)= 4 \pi.$$
 
+(TODO: Rest texen)
+
+\chapter{06.02.2012}
+
+\section{Anwendungen und Folgerungen der lokalen Version des Satzes von Gauß und Bonnet}
+
+\begin{theorem}[Gauuß-Bonnet (lokale Version)]
+	Es sei $\gamma$ eine einfache geschlossene Kurve, die ganz in einer Kartenumgebung einer orientierbaren Fläche $F$ im $\R^3$ verlaufe und einen Integrationsbereich $R$ umschließe.
+	$$\int\limits_{\gamma}{\kappa_g \mathrm{d}s} = 2 \pi - \int\limits_{R}{K \mathrm{d}A}$$
+	Dabei bezeichne $\kappa_g$ die geodätische Krümmung von $\gamma$, $\mathrm{d}s$ das Bogenlängenelement von $\gamma$, $K$ die Gauß-Krümmung von $M$, $\mathrm{d}A$ das Flächenelement von $M$.
+\end{theorem}
+
+\paragraph{Folgerungen}
+\begin{enumerate}
+\item Entspricht $F$ der euklidischen Ebene $\R^2$, so gilt für die Gauß-Krümmung $K=0$ und die lokale Version des Satzes von Gauß-Bonnet spezialisiert sich zum Umlaufsatz von Hopf für ebene Kurven:
+
+\begin{theorem}[Hopfscher Umlaufsatz]
+Für eine einfache geschlossene Kurve, die nach Bogenlänge parametrisiert und eben ist $(\gamma \colon [a,b] \rightarrow \R^2)$, gilt:
+$$\int\limits_{a}^{b}{\kappa(s) \mathrm{d}s} = \pm 2 \pi.$$
+\end{theorem}
+
+\item Gauß-Bonnet für stückweise glatte Kurven:
+\\ Es sei $\gamma$ eine einfache geschlossene, stückweise glatte Kurve.
+Sind für $i= 1, \ldots, k$ die Ecken von $\gamma$ durch $\gamma(t_i)$ gegeben, die Außenwinkel mit $\delta_i$, so gilt:
+$$\int\limits_R K \mathrm{d}A + \sum\limits_{i=2}^{k+1}{\int\limits_{t_{i-1}}^{t_i}{\kappa_g(s) \mathrm{d}s + \sum\limits_{i=1}^k{\delta_i}}} = 2 \pi.$$
+
+\begin{center}
+	\includegraphics[scale=0.3]{images/2012_02_06_Bild1.jpg}
+\end{center}
+
+%\item 
+\paragraph{3. a)} Ist nun $\gamma$ ein sogenanntes \underline{geodätisches Polygon}, d.h. die einzelnen Abschnitte sind jeweils kürzeste Verbindungen zwischen den Eckpunkten $\gamma(t_i)$, so ist $\kappa_g=0$ und es gilt:
+$$\int\limits_R K \mathrm{d}A + \sum\limits_{i=1}^k{\delta_i} = 2 \pi.$$
+
+\paragraph{b)} Für die Innenwinkel $\alpha_i$ an den Ecken $\gamma(t_i)$ gilt $\alpha_i = \pi - \delta_i$ und somit folgt für ein geodätisches $n$-Eck:
+$$\int\limits_{R} K \mathrm{d}A = 2 \pi - \sum\limits_{i=1}^n{(\pi - \alpha_i)} = \pi(2-n) + \sum\limits_{i=1}^n{\alpha_i}.$$
+
+Insbesondere gilt also für ein geodätisches Dreieck $\Delta$ mit Innenwinkeln $\alpha, \beta$ und $\gamma$:
+$$\int\limits_\Delta{K \mathrm{d}A} = \alpha + \beta + \gamma - \pi.$$
+
+Es lässt sich also die Gauß-Krümmung anhand der Winkelsumme eines geodätischen Dreiecks charakterisieren:
+$$\alpha + \beta + \gamma \begin{cases} > \pi \\ = \pi \\ < \pi \end{cases}, \text{falls } \begin{cases} K > 0 \\ K = 0 \\ K < 0 \end{cases}.$$
+
+Beispiel für $K=1$ ist die Einheitssphäre $S^2(1)$, für $K=0$ die Ebene und für $K=-1$ die hyperbolische Ebene.
+
+\end{enumerate}
+
+\paragraph{Anwendungen}
+\begin{enumerate}
+	\item Ist $K \leq 0$ auf einem Flächenstück $F$, so schneiden sich zwei nach Bogenlänge parametrisierte, voneinander verschiedene Kurven $\gamma_1$ und $\gamma_2$ höchstens einmal.
+	\begin{center}
+	\includegraphics[scale=0.3]{images/2012_02_06_Bild2.jpg}
+\end{center}
+\begin{proof}
+	Angenommen, die Kurven schneiden sich mehr als einmal.
+	
+	Dann entsteht ein geodätisches $2$-Eck, für das für die beiden Innenwinkel $\alpha$ und $\beta$ gilt: $\alpha > 0, \beta < 0$.
+	\begin{center}
+	\includegraphics[scale=0.3]{images/2012_02_06_Bild3.jpg}
+\end{center}
+	Nach Folgerung 3.b) aus der lokalen Version des Satzes von Gauß-Bonnet gilt aber
+	$$0 \geq \int\limits_F{K \mathrm{d}A} = \pi (2-2) + \alpha + \beta = \alpha + \beta > 0. \quad \lightning$$ 
+\end{proof}
+
+\item Ein Großkreis(segment) auf der Einheitssphäre $S^2(1)$ erfüllt (wie eine Gerade in der Ebene) $\kappa_g = 0$,
+
+\underline{denn:} Ist beispielsweise $\gamma(s) = (\cos (s), \sin(s), 0)$, so ist
+$$t = \gamma^\prime = \frac{d \gamma}{d s} = (- \sin(s), \cos(s), 0).$$
+Damit folgt:
+$$t^\prime = \gamma^{\prime \prime} = \frac{d^2 \gamma}{ds^2} = -(\cos(s), \sin(s), 0),$$
+d.h. $t^\prime$ steht senkrecht auf der Sphäre, d.h. die geodätische Krümmung $\kappa_g$ verschwindet als tangentiale Komponente von $t^\prime$ an $S^2$.
+
+Da für die Gauß-Krümmung auf der Einheitssphäre $S^2(1)$ gilt $K=1$, folgt für ein (beliebiges) Dreieck mit den (Innen-)Winkeln $\alpha, \beta$ und $\gamma$:
+$$\alpha + \beta + \gamma = \pi + \int\limits_\Delta \underbrace{K}_{\equiv 1} \mathrm{d} A = \pi + \text{ Flächeninhalt}(\Delta).$$
+
+\end{enumerate}
+
 \end{document}

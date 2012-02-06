@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.25)  4 FEB 2012 13:02
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.25)  6 FEB 2012 17:00
 entering extended mode
  %&-line parsing enabled.
 **mitschrieb_geotopo_uebung.tex
@@ -857,7 +857,7 @@ LaTeX Info: Redefining \pageref on input line 99.
 \openout4 = `mitschrieb_geotopo_uebung.out'.
 
 
-<torus2.pdf, id=155, 241.73793pt x 175.65433pt>
+<torus2.pdf, id=163, 241.73793pt x 175.65433pt>
 File: torus2.pdf Graphic file (type pdf)
  <use torus2.pdf> [1
 
@@ -969,7 +969,7 @@ Underfull \hbox (badness 1946) in paragraph at lines 207--208
 
 [4] [5]
 Kapitel 2.
-<images/Universell_Diagramm.jpg, id=247, 306.4248pt x 250.536pt>
+<images/Universell_Diagramm.jpg, id=258, 306.4248pt x 250.536pt>
 File: images/Universell_Diagramm.jpg Graphic file (type jpg)
 
 <use images/Universell_Diagramm.jpg> [6
@@ -979,7 +979,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--292
 
  []
 
-<images/0_1_nach_S1_f_stetig.jpg, id=255, 673.5564pt x 363.759pt>
+<images/0_1_nach_S1_f_stetig.jpg, id=266, 673.5564pt x 363.759pt>
 File: images/0_1_nach_S1_f_stetig.jpg Graphic file (type jpg)
 
 <use images/0_1_nach_S1_f_stetig.jpg>
@@ -988,7 +988,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 295.
 
-<images/0_1_nach_S1_f-1_nicht_stetig.jpg, id=256, 648.021pt x 356.0502pt>
+<images/0_1_nach_S1_f-1_nicht_stetig.jpg, id=267, 648.021pt x 356.0502pt>
 File: images/0_1_nach_S1_f-1_nicht_stetig.jpg Graphic file (type jpg)
 
 <use images/0_1_nach_S1_f-1_nicht_stetig.jpg>
@@ -1003,7 +1003,7 @@ pg>]pdfTeX warning (ext4): destination with the same identifier (name{subfigure
                    \relax 
 l.307 \subfloat
                [Iteration 1]{\includegraphics[width=0.4\textwidth]{images/Pe...
-<images/PeanoKurve1.jpg, id=265, 149.8097pt x 149.8097pt>
+<images/PeanoKurve1.jpg, id=276, 149.8097pt x 149.8097pt>
 File: images/PeanoKurve1.jpg Graphic file (type jpg)
 
 <use images/PeanoKurve1.jpg>pdfTeX warning (ext4): destination with the same id
@@ -1012,7 +1012,7 @@ entifier (name{subfigure.2.1.2}) has been already used, duplicate ignored
                    \relax 
 l.308 \subfloat
                [Iteration 2]{\includegraphics[width=0.4\textwidth]{images/Pe...
-<images/PeanoKurve2.jpg, id=266, 149.8097pt x 149.8097pt>
+<images/PeanoKurve2.jpg, id=277, 149.8097pt x 149.8097pt>
 File: images/PeanoKurve2.jpg Graphic file (type jpg)
 
 <use images/PeanoKurve2.jpg>
@@ -1027,12 +1027,12 @@ Underfull \hbox (badness 7722) in paragraph at lines 360--361
 
 [9
 
-] <images/Sinuseinsdurchx.png, id=285, 803.0pt x 342.27875pt>
+] <images/Sinuseinsdurchx.png, id=296, 803.0pt x 342.27875pt>
 File: images/Sinuseinsdurchx.png Graphic file (type png)
 
 <use images/Sinuseinsdurchx.png> [10] [11 <./images/Sinuseinsdurchx.png>]
 Kapitel 4.
-<images/Kartenwechsel.jpg, id=307, 615.2586pt x 486.618pt>
+<images/Kartenwechsel.jpg, id=318, 615.2586pt x 486.618pt>
 File: images/Kartenwechsel.jpg Graphic file (type jpg)
 
 <use images/Kartenwechsel.jpg> [12
@@ -1044,10 +1044,10 @@ MS/lmsy/m/n/10.95 ^^N \OML/lmm/m/it/10.95 id[] [] [] \OT1/lmr/m/n/10.95 (\OML/l
 mm/m/it/10.95 a; b\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 !
  []
 
-<images/S1.jpg, id=318, 364.7226pt x 363.759pt>
+<images/S1.jpg, id=329, 364.7226pt x 363.759pt>
 File: images/S1.jpg Graphic file (type jpg)
  <use images/S1.jpg> [13 <./images/Kartenwechsel.jpg> <./images/S1.jpg>]
-<images/Stereographie.jpg, id=323, 590.6868pt x 331.4784pt>
+<images/Stereographie.jpg, id=334, 590.6868pt x 331.4784pt>
 File: images/Stereographie.jpg Graphic file (type jpg)
 
 <use images/Stereographie.jpg>
@@ -1090,15 +1090,15 @@ s-tiert ei-ne $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 l \OMS/lmsy/m/n/10.95 ^^
 B \OML/lmm/m/it/10.95 l\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 -
  []
 
-<images/Zylinder.jpg, id=341, 574.3056pt x 529.4982pt>
+<images/Zylinder.jpg, id=352, 574.3056pt x 529.4982pt>
 File: images/Zylinder.jpg Graphic file (type jpg)
 
 <use images/Zylinder.jpg> [17]
-<images/Helix.jpg, id=348, 574.3056pt x 479.8728pt>
+<images/Helix.jpg, id=359, 574.3056pt x 479.8728pt>
 File: images/Helix.jpg Graphic file (type jpg)
  <use images/Helix.jpg>
 [18 <./images/Zylinder.jpg> <./images/Helix.jpg>]
-<images/Torus_Rotation.jpg, id=357, 574.3056pt x 479.8728pt>
+<images/Torus_Rotation.jpg, id=368, 574.3056pt x 479.8728pt>
 File: images/Torus_Rotation.jpg Graphic file (type jpg)
 
 <use images/Torus_Rotation.jpg> [19 <./images/Torus_Rotation.jpg>] [20]
@@ -1111,11 +1111,11 @@ e Räu-me $\OML/lmm/m/it/10.95 X; Y$ \T1/lmr/m/n/10.95 heiÿt ei-ne $[]$
 
 [21
 
-] [22] <images/sternfoermig.jpg, id=386, 376.7676pt x 377.2494pt>
+] [22] <images/sternfoermig.jpg, id=397, 376.7676pt x 377.2494pt>
 File: images/sternfoermig.jpg Graphic file (type jpg)
 
 <use images/sternfoermig.jpg>
-<images/Deformationsretrakt_S1_D2.jpg, id=387, 486.618pt x 453.8556pt>
+<images/Deformationsretrakt_S1_D2.jpg, id=398, 486.618pt x 453.8556pt>
 File: images/Deformationsretrakt_S1_D2.jpg Graphic file (type jpg)
 
 <use images/Deformationsretrakt_S1_D2.jpg> [23 <./images/sternfoermig.jpg>]
@@ -1123,57 +1123,57 @@ File: images/Deformationsretrakt_S1_D2.jpg Graphic file (type jpg)
 Kapitel 7.
 [25
 
-] [26] <images/S1_nichttrivialer_Weg.jpg, id=422, 362.3136pt x 361.35pt>
+] [26] <images/S1_nichttrivialer_Weg.jpg, id=433, 362.3136pt x 361.35pt>
 File: images/S1_nichttrivialer_Weg.jpg Graphic file (type jpg)
 
 <use images/S1_nichttrivialer_Weg.jpg>
-<images/Moebiusband.jpg, id=423, 669.2202pt x 376.7676pt>
+<images/Moebiusband.jpg, id=434, 669.2202pt x 376.7676pt>
 File: images/Moebiusband.jpg Graphic file (type jpg)
 
 <use images/Moebiusband.jpg> [27 <./images/S1_nichttrivialer_Weg.jpg>] [28 <./i
 mages/Moebiusband.jpg>]
 Kapitel 8.
-<images/2011_12_19_Bild1.jpg, id=435, 245.2362pt x 486.1362pt>
+<images/2011_12_19_Bild1.jpg, id=446, 245.2362pt x 486.1362pt>
 File: images/2011_12_19_Bild1.jpg Graphic file (type jpg)
 
 <use images/2011_12_19_Bild1.jpg> [29
 
 ]
-<images/2011_12_19_Bild2.jpg, id=443, 302.0886pt x 225.0006pt>
+<images/2011_12_19_Bild2.jpg, id=454, 302.0886pt x 225.0006pt>
 File: images/2011_12_19_Bild2.jpg Graphic file (type jpg)
 
 <use images/2011_12_19_Bild2.jpg> [30 <./images/2011_12_19_Bild1.jpg> <./images
 /2011_12_19_Bild2.jpg>]
-<images/2011_12_19_Bild3.jpg, id=451, 315.579pt x 402.303pt>
+<images/2011_12_19_Bild3.jpg, id=462, 315.579pt x 402.303pt>
 File: images/2011_12_19_Bild3.jpg Graphic file (type jpg)
 
 <use images/2011_12_19_Bild3.jpg> [31 <./images/2011_12_19_Bild3.jpg>]
-<images/2011_12_19_Bild4.jpg, id=457, 646.5756pt x 426.8748pt>
+<images/2011_12_19_Bild4.jpg, id=468, 646.5756pt x 426.8748pt>
 File: images/2011_12_19_Bild4.jpg Graphic file (type jpg)
 
 <use images/2011_12_19_Bild4.jpg>
-<images/2011_12_19_Bild5.jpg, id=458, 704.8734pt x 271.2534pt>
+<images/2011_12_19_Bild5.jpg, id=469, 704.8734pt x 271.2534pt>
 File: images/2011_12_19_Bild5.jpg Graphic file (type jpg)
 
 <use images/2011_12_19_Bild5.jpg> [32 <./images/2011_12_19_Bild4.jpg> <./images
 /2011_12_19_Bild5.jpg>]
 Kapitel 9.
-<images/2012_01_09_Bild1.jpg, id=465, 472.6458pt x 195.6108pt>
+<images/2012_01_09_Bild1.jpg, id=476, 472.6458pt x 195.6108pt>
 File: images/2012_01_09_Bild1.jpg Graphic file (type jpg)
 
 <use images/2012_01_09_Bild1.jpg>
-<images/2012_01_09_Bild2.jpg, id=466, 309.3156pt x 255.354pt>
+<images/2012_01_09_Bild2.jpg, id=477, 309.3156pt x 255.354pt>
 File: images/2012_01_09_Bild2.jpg Graphic file (type jpg)
 
 <use images/2012_01_09_Bild2.jpg>
-<images/2012_01_09_Bild3.jpg, id=467, 309.3156pt x 273.6624pt>
+<images/2012_01_09_Bild3.jpg, id=478, 309.3156pt x 273.6624pt>
 File: images/2012_01_09_Bild3.jpg Graphic file (type jpg)
 
 <use images/2012_01_09_Bild3.jpg> [33
 
  <./images/2012_01_09_Bild1.jpg>] [34 <./images/2012_01_09_Bild2.jpg> <./images
 /2012_01_09_Bild3.jpg>]
-<images/2012_01_09_Bild4.jpg, id=482, 93.951pt x 171.039pt>
+<images/2012_01_09_Bild4.jpg, id=493, 93.951pt x 171.039pt>
 File: images/2012_01_09_Bild4.jpg Graphic file (type jpg)
 
 <use images/2012_01_09_Bild4.jpg>
@@ -1212,30 +1212,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 1148--1151
 
 [40]
 Kapitel 11.
-<images/2012_01_30_Bild1.jpg, id=534, 1069.1142pt x 503.9628pt>
+<images/2012_01_30_Bild1.jpg, id=545, 1069.1142pt x 503.9628pt>
 File: images/2012_01_30_Bild1.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild1.jpg> [41
 
  <./images/2012_01_30_Bild1.jpg>]
-<images/2012_01_30_Bild2.jpg, id=545, 168.1482pt x 137.7948pt>
+<images/2012_01_30_Bild2.jpg, id=556, 168.1482pt x 137.7948pt>
 File: images/2012_01_30_Bild2.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild2.jpg>
-<images/2012_01_30_Bild3.jpg, id=546, 424.9476pt x 344.487pt>
+<images/2012_01_30_Bild3.jpg, id=557, 424.9476pt x 344.487pt>
 File: images/2012_01_30_Bild3.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild3.jpg>
-<images/2012_01_30_Bild4.jpg, id=547, 925.5378pt x 502.5174pt>
+<images/2012_01_30_Bild4.jpg, id=558, 925.5378pt x 502.5174pt>
 File: images/2012_01_30_Bild4.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild4.jpg> [42 <./images/2012_01_30_Bild2.jpg> <./images
 /2012_01_30_Bild3.jpg> <./images/2012_01_30_Bild4.jpg>]
-<images/2012_01_30_Bild5.jpg, id=553, 688.0104pt x 348.8232pt>
+<images/2012_01_30_Bild5.jpg, id=564, 688.0104pt x 348.8232pt>
 File: images/2012_01_30_Bild5.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild5.jpg>
-<images/2012_01_30_Bild6.jpg, id=554, 675.4836pt x 489.027pt>
+<images/2012_01_30_Bild6.jpg, id=565, 675.4836pt x 489.027pt>
 File: images/2012_01_30_Bild6.jpg Graphic file (type jpg)
 
 <use images/2012_01_30_Bild6.jpg>
@@ -1266,12 +1266,53 @@ Overfull \hbox (9.28935pt too wide) detected at line 1257
 L/lmm/m/it/10.95 ^^Y:
  []
 
-[44] (./mitschrieb_geotopo_uebung.aux) ) 
+[44]
+Kapitel 12.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 1278--1278
+[][] 
+ []
+
+[45
+
+] <images/2012_02_06_Bild1.jpg, id=585, 578.16pt x 449.68pt>
+File: images/2012_02_06_Bild1.jpg Graphic file (type jpg)
+
+<use images/2012_02_06_Bild1.jpg>
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 25.14491pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <./images/2012_02_06_Bild1.jpg>]
+<images/2012_02_06_Bild2.jpg, id=592, 449.68pt x 449.68pt>
+File: images/2012_02_06_Bild2.jpg Graphic file (type jpg)
+
+<use images/2012_02_06_Bild2.jpg>
+<images/2012_02_06_Bild3.jpg, id=593, 513.92pt x 192.72pt>
+File: images/2012_02_06_Bild3.jpg Graphic file (type jpg)
+
+<use images/2012_02_06_Bild3.jpg>
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 25.14491pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47 <./images/2012_02_06_Bild2.jpg> <./images/2012_02_06_Bild3.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 25.14491pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48] (./mitschrieb_geotopo_uebung.aux) ) 
 Here is how much of TeX's memory you used:
- 9555 strings out of 256216
- 142852 string characters out of 1917072
+ 9588 strings out of 256216
+ 143465 string characters out of 1917072
  213003 words of memory out of 1500000
- 12276 multiletter control sequences out of 10000+200000
+ 12290 multiletter control sequences out of 10000+200000
  95696 words of font info for 96 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  45i,15n,61p,445b,642s stack positions out of 5000i,500n,6000p,200000b,15000s
@@ -1293,9 +1334,9 @@ mf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy
 9.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm10.pfb></usr/share/texmf/fo
 nts/type1/bluesky/ams/msbm7.pfb></usr/share/texmf/fonts/type1/hoekwater/stmaryr
 d/stmary10.pfb>
-Output written on mitschrieb_geotopo_uebung.pdf (45 pages, 1892888 bytes).
+Output written on mitschrieb_geotopo_uebung.pdf (49 pages, 1976696 bytes).
 PDF statistics:
- 686 PDF objects out of 1000 (max. 8388607)
- 204 named destinations out of 1000 (max. 131072)
- 473 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 733 PDF objects out of 1000 (max. 8388607)
+ 220 named destinations out of 1000 (max. 131072)
+ 504 words of extra memory for PDF output out of 10000 (max. 10000000)
 

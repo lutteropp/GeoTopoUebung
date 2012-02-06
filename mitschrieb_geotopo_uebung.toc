@@ -63,3 +63,9 @@
 \contentsline {section}{\numberline {11.1}Nachtrag zur Topologie von Fl\IeC {\"a}chen}{41}{section.11.1}
 \contentsline {paragraph}{Behauptung:}{41}{section*.21}
 \contentsline {section}{\numberline {11.2}Berechnung des Fl\IeC {\"a}cheninhalts der Sph\IeC {\"a}re $S^2$}{43}{section.11.2}
+\contentsline {chapter}{\numberline {12}06.02.2012}{45}{chapter.12}
+\contentsline {section}{\numberline {12.1}Anwendungen und Folgerungen der lokalen Version des Satzes von Gau\IeC {\ss } und Bonnet}{45}{section.12.1}
+\contentsline {paragraph}{Folgerungen}{45}{section*.22}
+\contentsline {paragraph}{3. a)}{46}{section*.23}
+\contentsline {paragraph}{b)}{46}{section*.24}
+\contentsline {paragraph}{Anwendungen}{47}{section*.25}
