@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.25)  6 FEB 2012 17:00
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.1.25)  11 FEB 2012 11:14
 entering extended mode
  %&-line parsing enabled.
 **mitschrieb_geotopo_uebung.tex
@@ -1275,7 +1275,7 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 1278--1278
 
 [45
 
-] <images/2012_02_06_Bild1.jpg, id=585, 578.16pt x 449.68pt>
+] <images/2012_02_06_Bild1.jpg, id=585, 682.2288pt x 499.6266pt>
 File: images/2012_02_06_Bild1.jpg Graphic file (type jpg)
 
 <use images/2012_02_06_Bild1.jpg>
@@ -1286,11 +1286,11 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [46 <./images/2012_02_06_Bild1.jpg>]
-<images/2012_02_06_Bild2.jpg, id=592, 449.68pt x 449.68pt>
+<images/2012_02_06_Bild2.jpg, id=592, 331.9602pt x 331.9602pt>
 File: images/2012_02_06_Bild2.jpg Graphic file (type jpg)
 
 <use images/2012_02_06_Bild2.jpg>
-<images/2012_02_06_Bild3.jpg, id=593, 513.92pt x 192.72pt>
+<images/2012_02_06_Bild3.jpg, id=593, 375.804pt x 171.5208pt>
 File: images/2012_02_06_Bild3.jpg Graphic file (type jpg)
 
 <use images/2012_02_06_Bild3.jpg>
@@ -1334,7 +1334,7 @@ mf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy
 9.pfb></usr/share/texmf/fonts/type1/bluesky/ams/msbm10.pfb></usr/share/texmf/fo
 nts/type1/bluesky/ams/msbm7.pfb></usr/share/texmf/fonts/type1/hoekwater/stmaryr
 d/stmary10.pfb>
-Output written on mitschrieb_geotopo_uebung.pdf (49 pages, 1976696 bytes).
+Output written on mitschrieb_geotopo_uebung.pdf (49 pages, 2043834 bytes).
 PDF statistics:
  733 PDF objects out of 1000 (max. 8388607)
  220 named destinations out of 1000 (max. 131072)
