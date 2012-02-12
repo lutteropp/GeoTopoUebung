@@ -203,7 +203,7 @@ Dies ist ein Mitschrieb der Übung “Einführung in die Geometrie und Topologie
 \end{section}
 
 \begin{section}{Homotopieäquivalenz}
-	\begin{definition}
+	\begin{definition}[homotopieäquivalent]
 		Seien $X,Y$ topologische Räume. $X$ heißt \underline{homotopieäquivalent zu Y}, falls es stetige Abbildungen $f \colon X \rightarrow Y$ und $g \colon Y \rightarrow X$ gibt, so dass $f \circ g \simeq id_Y$ und $g \circ f \simeq id_X$.
 	\end{definition}
 	
@@ -332,7 +332,7 @@ Setze die Abbildung $h$ durch lineare Fortsetzungen stetig auf $I$ fort.
 \section{Nachträge und Wiederholungen zur Vorlesung}
 \subsection{Überdeckung, Teilüberdeckung und Kompaktheit}
 Sei $X$ ein topologischer Raum.
-\begin{definition}
+\begin{definition}[Überdeckung, kompakt]
 	\begin{itemize}
 		\item Eine Familie $\{\mathcal{U}_\alpha \mid \alpha \in A \}$ von Teilmengen von $X$ heißt \underline{Überdeckung} von $X$, falls gilt: $X = \bigcup\limits_{\alpha \in A}{\mathcal{U}_\alpha}$.
 		\item Eine Überdeckung heißt \underline{offen} (bzw. \underline{abgeschlossen}), falls alle $\mathcal{U}_\alpha (\alpha \in A)$ offen (bzw. abgeschlossen) sind.
@@ -348,7 +348,7 @@ Sei $X$ ein topologischer Raum.
 	\end{itemize}
 \end{example}
 
-\begin{definition}	Eine \underline{kompakte Menge} ist eine Teilmenge eines vom Kontext her klaren topologischen Raumes, die bezüglich der Teilraumtopologie kompakt ist.
+\begin{definition}[kompakte Menge]	Eine \underline{kompakte Menge} ist eine Teilmenge eines vom Kontext her klaren topologischen Raumes, die bezüglich der Teilraumtopologie kompakt ist.
 \end{definition}
 
 \begin{example}
@@ -368,7 +368,7 @@ Sei $X$ ein topologischer Raum.
 \end{remark}
 
 \subsection{Wegzusammenhang}
-\begin{definition}
+\begin{definition}[Weg, Wegzusammenhangskomponente]
 	\begin{itemize}
 		\item Ein \underline{Weg} in $X$ ist eine stetige Abbildung $\gamma \colon I(=[0,1]) \rightarrow X$ mit Anfangspunkt $\gamma(0)$ und Endpunkt $\gamma(1)$.	
 		\item Man nennt $X$ \underline{wegzusammenhängend}, falls für alle $x,y \in X$ ein Weg $\gamma \colon [0,1] \rightarrow X$ in $X$ existiert mit $\gamma(0)=x, \gamma(1)=y$.
@@ -862,7 +862,7 @@ $$\pi_1(S^1) \approx \pi_1(S) \approx \pi_1(M).$$
 \chapter{19.12.2011}
 \section{Überlagerungen und Liftungen}
 
-\begin{definition}
+\begin{definition}[Überlagerung]
 	Eine Überlagerung eines topologischen Raumes $X$ ist ein Raum $\widetilde{X}$ zusammen mit einer surjektiven stetigen Abbildung $\pi \colon \widetilde{X} \rightarrow X$, so dass für alle Punkte $x \in X$ eine Umgebung $U=U(x)$ existiert mit
 	\begin{enumerate}
 		\item $\pi^{-1}$ ist eine nichtleere Vereinigung paarweise disjunkter offener Mengen $\widetilde{U_j} \subseteq \widetilde{X}, j \in J$,
@@ -987,7 +987,7 @@ $$G \rightarrow G, g \mapsto g^{-1}$$
 stetig sind.
 
 Es seien $G$ eine topologische Gruppe, $X$ ein topologischer Raum.
-\begin{definition}
+\begin{definition}[Operation, Wirkung]
 	\begin{itemize}
 		\item Eine \underline{Operation} oder \underline{Wirkung} von $G$ auf $X$ ist eine stetige Abbildung 
 		$$G \times X \rightarrow X, (g,x) \mapsto g. x$$
